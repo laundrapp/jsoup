@@ -27,28 +27,28 @@
 @implementation OrgJsoupSelectElements
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSelectElements_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithInt:(jint)initialCapacity {
+- (instancetype __nonnull)initWithInt:(jint)initialCapacity {
   OrgJsoupSelectElements_initWithInt_(self, initialCapacity);
   return self;
 }
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)elements {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)elements {
   OrgJsoupSelectElements_initWithJavaUtilCollection_(self, elements);
   return self;
 }
 
-- (instancetype)initWithJavaUtilList:(id<JavaUtilList>)elements {
+- (instancetype __nonnull)initWithJavaUtilList:(id<JavaUtilList>)elements {
   OrgJsoupSelectElements_initWithJavaUtilList_(self, elements);
   return self;
 }
 
-- (instancetype)initWithOrgJsoupNodesElementArray:(IOSObjectArray *)elements {
+- (instancetype __nonnull)initWithOrgJsoupNodesElementArray:(IOSObjectArray *)elements {
   OrgJsoupSelectElements_initWithOrgJsoupNodesElementArray_(self, elements);
   return self;
 }
@@ -285,7 +285,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -333,6 +333,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithInt:);
   methods[2].selector = @selector(initWithJavaUtilCollection:);

@@ -84,7 +84,7 @@ __attribute__((unused)) static void OrgJsoupNodesElement_htmlWithJavaLangStringB
   JavaLangStringBuilder *val$accum_;
 }
 
-- (instancetype)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)capture$0;
+- (instancetype __nonnull)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)capture$0;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)node
                           withInt:(jint)depth;
@@ -106,15 +106,15 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesElement)
 
 @implementation OrgJsoupNodesElement
 
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
-                             withNSString:(NSString *)baseUri
-              withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes {
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
+                                       withNSString:(NSString *)baseUri
+                        withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes {
   OrgJsoupNodesElement_initWithOrgJsoupParserTag_withNSString_withOrgJsoupNodesAttributes_(self, tag, baseUri, attributes);
   return self;
 }
 
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
-                             withNSString:(NSString *)baseUri {
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
+                                       withNSString:(NSString *)baseUri {
   OrgJsoupNodesElement_initWithOrgJsoupParserTag_withNSString_(self, tag, baseUri);
   return self;
 }
@@ -779,6 +779,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesElement)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupParserTag:withNSString:withOrgJsoupNodesAttributes:);
   methods[1].selector = @selector(initWithOrgJsoupParserTag:withNSString:);
   methods[2].selector = @selector(nodeName);
@@ -980,7 +981,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesElement)
 
 @implementation OrgJsoupNodesElement_1
 
-- (instancetype)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)capture$0 {
+- (instancetype __nonnull)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)capture$0 {
   OrgJsoupNodesElement_1_initWithJavaLangStringBuilder_(self, capture$0);
   return self;
 }
@@ -1014,6 +1015,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesElement)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangStringBuilder:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);

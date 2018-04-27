@@ -68,7 +68,7 @@
 
 + (NSString *)encodeMimeNameWithNSString:(NSString *)val;
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -99,7 +99,7 @@ __attribute__((unused)) static OrgJsoupHelperHttpConnection *create_OrgJsoupHelp
 
 @interface OrgJsoupHelperHttpConnection_Base ()
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)getHeaderCaseInsensitiveWithNSString:(NSString *)name;
 
@@ -127,7 +127,7 @@ __attribute__((unused)) static id<JavaUtilMap_Entry> OrgJsoupHelperHttpConnectio
   NSString *postDataCharset_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -153,7 +153,7 @@ __attribute__((unused)) static OrgJsoupHelperHttpConnection_Request *create_OrgJ
   id<OrgJsoupConnection_Request> req_;
 }
 
-- (instancetype)initWithOrgJsoupHelperHttpConnection_Response:(OrgJsoupHelperHttpConnection_Response *)previousResponse;
+- (instancetype __nonnull)initWithOrgJsoupHelperHttpConnection_Response:(OrgJsoupHelperHttpConnection_Response *)previousResponse;
 
 + (JavaNetHttpURLConnection *)createConnectionWithOrgJsoupConnection_Request:(id<OrgJsoupConnection_Request>)req;
 
@@ -236,7 +236,7 @@ __attribute__((unused)) static void OrgJsoupHelperHttpConnection_Response_serial
 
 @interface OrgJsoupHelperHttpConnection_Response_1 : NSObject < JavaxNetSslHostnameVerifier >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)verifyWithNSString:(NSString *)urlHostName
      withJavaxNetSslSSLSession:(id<JavaxNetSslSSLSession>)session;
@@ -253,7 +253,7 @@ __attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_1 *create_O
 
 @interface OrgJsoupHelperHttpConnection_Response_2 : NSObject < JavaxNetSslX509TrustManager >
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)checkClientTrustedWithJavaSecurityCertX509CertificateArray:(IOSObjectArray *)chain
                                                       withNSString:(NSString *)authType;
@@ -280,7 +280,7 @@ __attribute__((unused)) static OrgJsoupHelperHttpConnection_Response_2 *create_O
   JavaIoInputStream *stream_;
 }
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -315,7 +315,7 @@ NSString *OrgJsoupHelperHttpConnection_CONTENT_ENCODING = @"Content-Encoding";
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_init(self);
   return self;
 }
@@ -535,6 +535,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(connectWithNSString:);
   methods[1].selector = @selector(connectWithJavaNetURL:);
   methods[2].selector = @selector(encodeUrlWithNSString:);
@@ -629,7 +630,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperHttpConnection)
 @implementation OrgJsoupHelperHttpConnection_Base
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_Base_init(self);
   return self;
 }
@@ -757,6 +758,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(url);
   methods[2].selector = @selector(urlWithJavaNetURL:);
@@ -819,7 +821,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperHttpConnection_Base)
 @implementation OrgJsoupHelperHttpConnection_Request
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_Request_init(self);
   return self;
 }
@@ -942,6 +944,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(timeout);
   methods[2].selector = @selector(timeoutWithInt:);
@@ -1012,13 +1015,13 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupHelperHttpConnection_Response)
 @implementation OrgJsoupHelperHttpConnection_Response
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_Response_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithOrgJsoupHelperHttpConnection_Response:(OrgJsoupHelperHttpConnection_Response *)previousResponse {
+- (instancetype __nonnull)initWithOrgJsoupHelperHttpConnection_Response:(OrgJsoupHelperHttpConnection_Response *)previousResponse {
   OrgJsoupHelperHttpConnection_Response_initWithOrgJsoupHelperHttpConnection_Response_(self, previousResponse);
   return self;
 }
@@ -1159,6 +1162,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithOrgJsoupHelperHttpConnection_Response:);
   methods[2].selector = @selector(executeWithOrgJsoupConnection_Request:);
@@ -1472,7 +1476,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperHttpConnection_Response)
 @implementation OrgJsoupHelperHttpConnection_Response_1
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_Response_1_init(self);
   return self;
 }
@@ -1490,6 +1494,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(verifyWithNSString:withJavaxNetSslSSLSession:);
   #pragma clang diagnostic pop
@@ -1515,7 +1520,7 @@ OrgJsoupHelperHttpConnection_Response_1 *create_OrgJsoupHelperHttpConnection_Res
 @implementation OrgJsoupHelperHttpConnection_Response_2
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_Response_2_init(self);
   return self;
 }
@@ -1542,6 +1547,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(checkClientTrustedWithJavaSecurityCertX509CertificateArray:withNSString:);
   methods[2].selector = @selector(checkServerTrustedWithJavaSecurityCertX509CertificateArray:withNSString:);
@@ -1580,7 +1586,7 @@ OrgJsoupHelperHttpConnection_Response_2 *create_OrgJsoupHelperHttpConnection_Res
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperHttpConnection_KeyVal_init(self);
   return self;
 }
@@ -1647,6 +1653,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(createWithNSString:withNSString:);
   methods[1].selector = @selector(createWithNSString:withNSString:withJavaIoInputStream:);
   methods[2].selector = @selector(init);

@@ -126,7 +126,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)getName;
 
@@ -167,7 +167,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Doctype)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (void)appendAttributeNameWithChar:(jchar)append;
 
@@ -226,7 +226,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Tag)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (OrgJsoupParserToken_StartTag *)nameAttrWithNSString:(NSString *)name
                            withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
@@ -258,7 +258,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_StartTag)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -292,7 +292,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_EndTag)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)getData;
 
@@ -327,7 +327,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Comment)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (OrgJsoupParserToken_Character *)dataWithNSString:(NSString *)data;
 
@@ -358,7 +358,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserToken_Character)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (OrgJsoupParserToken *)reset;
 

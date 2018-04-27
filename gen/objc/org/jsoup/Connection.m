@@ -73,6 +73,7 @@ __attribute__((unused)) static void OrgJsoupConnection_Method_initWithBoolean_wi
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(urlWithJavaNetURL:);
   methods[1].selector = @selector(urlWithNSString:);
   methods[2].selector = @selector(userAgentWithNSString:);
@@ -137,6 +138,7 @@ OrgJsoupConnection_Method *OrgJsoupConnection_Method_values_[5];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(hasBody);
   methods[1].selector = @selector(values);
   methods[2].selector = @selector(valueOfWithNSString:);
@@ -160,15 +162,15 @@ OrgJsoupConnection_Method *OrgJsoupConnection_Method_values_[5];
     size_t allocSize = 5 * objSize;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    (JreEnum(OrgJsoupConnection_Method, GET) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupConnection_Method, GET) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(e, false, @"GET", 0);
-    (JreEnum(OrgJsoupConnection_Method, POST) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupConnection_Method, POST) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(e, true, @"POST", 1);
-    (JreEnum(OrgJsoupConnection_Method, PUT) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupConnection_Method, PUT) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(e, true, @"PUT", 2);
-    (JreEnum(OrgJsoupConnection_Method, DELETE) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupConnection_Method, DELETE) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(e, false, @"DELETE", 3);
-    (JreEnum(OrgJsoupConnection_Method, PATCH) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupConnection_Method, PATCH) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupConnection_Method_initWithBoolean_withNSString_withInt_(e, true, @"PATCH", 4);
     J2OBJC_SET_INITIALIZED(OrgJsoupConnection_Method)
   }
@@ -230,6 +232,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupConnection_Method)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(url);
   methods[1].selector = @selector(urlWithJavaNetURL:);
   methods[2].selector = @selector(method);
@@ -280,6 +283,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(OrgJsoupConnection_Base)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(timeout);
   methods[1].selector = @selector(timeoutWithInt:);
   methods[2].selector = @selector(maxBodySize);
@@ -322,6 +326,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(OrgJsoupConnection_Request)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(statusCode);
   methods[1].selector = @selector(statusMessage);
   methods[2].selector = @selector(charset);
@@ -353,6 +358,7 @@ J2OBJC_INTERFACE_TYPE_LITERAL_SOURCE(OrgJsoupConnection_Response)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(keyWithNSString:);
   methods[1].selector = @selector(key);
   methods[2].selector = @selector(valueWithNSString:);

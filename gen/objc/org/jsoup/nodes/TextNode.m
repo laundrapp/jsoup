@@ -32,8 +32,8 @@ __attribute__((unused)) static void OrgJsoupNodesTextNode_ensureAttributes(OrgJs
 
 @implementation OrgJsoupNodesTextNode
 
-- (instancetype)initWithNSString:(NSString *)text
-                    withNSString:(NSString *)baseUri {
+- (instancetype __nonnull)initWithNSString:(NSString *)text
+                              withNSString:(NSString *)baseUri {
   OrgJsoupNodesTextNode_initWithNSString_withNSString_(self, text, baseUri);
   return self;
 }
@@ -187,6 +187,7 @@ __attribute__((unused)) static void OrgJsoupNodesTextNode_ensureAttributes(OrgJs
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:);
   methods[1].selector = @selector(nodeName);
   methods[2].selector = @selector(text);

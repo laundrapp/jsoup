@@ -19,15 +19,15 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserParseError, errorMsg_, NSString *)
 
 @implementation OrgJsoupParserParseError
 
-- (instancetype)initWithInt:(jint)pos
-               withNSString:(NSString *)errorMsg {
+- (instancetype __nonnull)initWithInt:(jint)pos
+                         withNSString:(NSString *)errorMsg {
   OrgJsoupParserParseError_initWithInt_withNSString_(self, pos, errorMsg);
   return self;
 }
 
-- (instancetype)initWithInt:(jint)pos
-               withNSString:(NSString *)errorFormat
-          withNSObjectArray:(IOSObjectArray *)args {
+- (instancetype __nonnull)initWithInt:(jint)pos
+                         withNSString:(NSString *)errorFormat
+                    withNSObjectArray:(IOSObjectArray *)args {
   OrgJsoupParserParseError_initWithInt_withNSString_withNSObjectArray_(self, pos, errorFormat, args);
   return self;
 }
@@ -59,6 +59,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupParserParseError, errorMsg_, NSString *)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:withNSString:);
   methods[1].selector = @selector(initWithInt:withNSString:withNSObjectArray:);
   methods[2].selector = @selector(getErrorMessage);

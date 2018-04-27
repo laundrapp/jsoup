@@ -37,8 +37,8 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesAttribute)
 
 @implementation OrgJsoupNodesAttribute
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value {
   OrgJsoupNodesAttribute_initWithNSString_withNSString_(self, key, value);
   return self;
 }
@@ -149,6 +149,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:);
   methods[1].selector = @selector(getKey);
   methods[2].selector = @selector(setKeyWithNSString:);

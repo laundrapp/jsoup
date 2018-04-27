@@ -19,7 +19,7 @@
 
 @interface OrgJsoupJsoup ()
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -32,7 +32,7 @@ __attribute__((unused)) static OrgJsoupJsoup *create_OrgJsoupJsoup_init(void);
 @implementation OrgJsoupJsoup
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupJsoup_init(self);
   return self;
 }
@@ -139,6 +139,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(parseWithNSString:withNSString:);
   methods[2].selector = @selector(parseWithNSString:withNSString:withOrgJsoupParserParser:);

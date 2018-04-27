@@ -20,9 +20,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupUnsupportedMimeTypeException, url_, NSString *)
 
 @implementation OrgJsoupUnsupportedMimeTypeException
 
-- (instancetype)initWithNSString:(NSString *)message
-                    withNSString:(NSString *)mimeType
-                    withNSString:(NSString *)url {
+- (instancetype __nonnull)initWithNSString:(NSString *)message
+                              withNSString:(NSString *)mimeType
+                              withNSString:(NSString *)url {
   OrgJsoupUnsupportedMimeTypeException_initWithNSString_withNSString_withNSString_(self, message, mimeType, url);
   return self;
 }
@@ -54,6 +54,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupUnsupportedMimeTypeException, url_, NSString *)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:withNSString:);
   methods[1].selector = @selector(getMimeType);
   methods[2].selector = @selector(getUrl);

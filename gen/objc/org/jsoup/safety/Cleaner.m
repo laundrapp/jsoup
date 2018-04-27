@@ -49,9 +49,9 @@ __attribute__((unused)) static OrgJsoupSafetyCleaner_ElementMeta *OrgJsoupSafety
   OrgJsoupNodesElement *destination_;
 }
 
-- (instancetype)initWithOrgJsoupSafetyCleaner:(OrgJsoupSafetyCleaner *)outer$
-                     withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
-                     withOrgJsoupNodesElement:(OrgJsoupNodesElement *)destination;
+- (instancetype __nonnull)initWithOrgJsoupSafetyCleaner:(OrgJsoupSafetyCleaner *)outer$
+                               withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
+                               withOrgJsoupNodesElement:(OrgJsoupNodesElement *)destination;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)source
                           withInt:(jint)depth;
@@ -80,8 +80,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyCleaner_CleaningVisitor)
   jint numAttribsDiscarded_;
 }
 
-- (instancetype)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)el
-                                     withInt:(jint)numAttribsDiscarded;
+- (instancetype __nonnull)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)el
+                                               withInt:(jint)numAttribsDiscarded;
 
 @end
 
@@ -99,7 +99,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyCleaner_ElementMeta)
 
 @implementation OrgJsoupSafetyCleaner
 
-- (instancetype)initWithOrgJsoupSafetyWhitelist:(OrgJsoupSafetyWhitelist *)whitelist {
+- (instancetype __nonnull)initWithOrgJsoupSafetyWhitelist:(OrgJsoupSafetyWhitelist *)whitelist {
   OrgJsoupSafetyCleaner_initWithOrgJsoupSafetyWhitelist_(self, whitelist);
   return self;
 }
@@ -142,6 +142,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyCleaner_ElementMeta)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSafetyWhitelist:);
   methods[1].selector = @selector(cleanWithOrgJsoupNodesDocument:);
   methods[2].selector = @selector(isValidWithOrgJsoupNodesDocument:);
@@ -198,9 +199,9 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyCleaner)
 
 @implementation OrgJsoupSafetyCleaner_CleaningVisitor
 
-- (instancetype)initWithOrgJsoupSafetyCleaner:(OrgJsoupSafetyCleaner *)outer$
-                     withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
-                     withOrgJsoupNodesElement:(OrgJsoupNodesElement *)destination {
+- (instancetype __nonnull)initWithOrgJsoupSafetyCleaner:(OrgJsoupSafetyCleaner *)outer$
+                               withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
+                               withOrgJsoupNodesElement:(OrgJsoupNodesElement *)destination {
   OrgJsoupSafetyCleaner_CleaningVisitor_initWithOrgJsoupSafetyCleaner_withOrgJsoupNodesElement_withOrgJsoupNodesElement_(self, outer$, root, destination);
   return self;
 }
@@ -257,6 +258,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyCleaner)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSafetyCleaner:withOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);
@@ -294,8 +296,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyCleaner_CleaningVisitor)
 
 @implementation OrgJsoupSafetyCleaner_ElementMeta
 
-- (instancetype)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)el
-                                     withInt:(jint)numAttribsDiscarded {
+- (instancetype __nonnull)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)el
+                                               withInt:(jint)numAttribsDiscarded {
   OrgJsoupSafetyCleaner_ElementMeta_initWithOrgJsoupNodesElement_withInt_(self, el, numAttribsDiscarded);
   return self;
 }
@@ -311,6 +313,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyCleaner_CleaningVisitor)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupNodesElement:withInt:);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

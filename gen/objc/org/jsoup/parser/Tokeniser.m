@@ -62,8 +62,8 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupParserTokeniser)
 
 @implementation OrgJsoupParserTokeniser
 
-- (instancetype)initWithOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)reader
-                     withOrgJsoupParserParseErrorList:(OrgJsoupParserParseErrorList *)errors {
+- (instancetype __nonnull)initWithOrgJsoupParserCharacterReader:(OrgJsoupParserCharacterReader *)reader
+                               withOrgJsoupParserParseErrorList:(OrgJsoupParserParseErrorList *)errors {
   OrgJsoupParserTokeniser_initWithOrgJsoupParserCharacterReader_withOrgJsoupParserParseErrorList_(self, reader, errors);
   return self;
 }
@@ -321,6 +321,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupParserTokeniser)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupParserCharacterReader:withOrgJsoupParserParseErrorList:);
   methods[1].selector = @selector(read);
   methods[2].selector = @selector(emitWithOrgJsoupParserToken:);

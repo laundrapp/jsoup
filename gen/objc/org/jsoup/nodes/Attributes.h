@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesAttributes
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesAttributes_) && (INCLUDE_ALL_OrgJsoupNodesAttributes || defined(INCLUDE_OrgJsoupNodesAttributes))
 #define OrgJsoupNodesAttributes_
 
@@ -44,7 +49,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Add all the attributes from the incoming set to this set.
@@ -164,4 +169,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesAttributes)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesAttributes")

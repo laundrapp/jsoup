@@ -33,7 +33,7 @@ __attribute__((unused)) static jint OrgJsoupParserTokenQueue_remainingLength(Org
 
 @implementation OrgJsoupParserTokenQueue
 
-- (instancetype)initWithNSString:(NSString *)data {
+- (instancetype __nonnull)initWithNSString:(NSString *)data {
   OrgJsoupParserTokenQueue_initWithNSString_(self, data);
   return self;
 }
@@ -298,6 +298,7 @@ __attribute__((unused)) static jint OrgJsoupParserTokenQueue_remainingLength(Org
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(isEmpty);
   methods[2].selector = @selector(remainingLength);

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupSelectCollector
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectCollector_) && (INCLUDE_ALL_OrgJsoupSelectCollector || defined(INCLUDE_OrgJsoupSelectCollector))
 #define OrgJsoupSelectCollector_
 
@@ -47,4 +52,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCollector)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectCollector")

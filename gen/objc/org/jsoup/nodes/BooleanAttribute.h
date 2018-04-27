@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesBooleanAttribute
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesBooleanAttribute_) && (INCLUDE_ALL_OrgJsoupNodesBooleanAttribute || defined(INCLUDE_OrgJsoupNodesBooleanAttribute))
 #define OrgJsoupNodesBooleanAttribute_
 
@@ -31,7 +36,7 @@
  @brief Create a new boolean attribute from unencoded (raw) key.
  @param key attribute key
  */
-- (instancetype)initWithNSString:(NSString *)key;
+- (instancetype __nonnull)initWithNSString:(NSString *)key;
 
 #pragma mark Protected
 
@@ -39,8 +44,8 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithNSString:(NSString *)arg0
-                    withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+                              withNSString:(NSString *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -56,4 +61,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesBooleanAttribute)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesBooleanAttribute")

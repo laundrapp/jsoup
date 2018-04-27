@@ -375,7 +375,7 @@ __attribute__((unused)) static void OrgJsoupParserHtmlTreeBuilderState_23_initWi
 
 @interface OrgJsoupParserHtmlTreeBuilderState_Constants : NSObject
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -508,6 +508,7 @@ OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_values_[2
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(isWhitespaceWithOrgJsoupParserToken:);
   methods[2].selector = @selector(isWhitespaceWithNSString:);
@@ -598,51 +599,51 @@ OrgJsoupParserHtmlTreeBuilderState *OrgJsoupParserHtmlTreeBuilderState_values_[2
     allocSize += objSize_ForeignContent;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, Initial) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_1 class], (void *)ptr), ptr += objSize_Initial);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, Initial) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_1 class], (void *)ptr)), ptr += objSize_Initial);
     OrgJsoupParserHtmlTreeBuilderState_1_initWithNSString_withInt_(e, @"Initial", 0);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHtml) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_2 class], (void *)ptr), ptr += objSize_BeforeHtml);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHtml) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_2 class], (void *)ptr)), ptr += objSize_BeforeHtml);
     OrgJsoupParserHtmlTreeBuilderState_2_initWithNSString_withInt_(e, @"BeforeHtml", 1);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHead) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_3 class], (void *)ptr), ptr += objSize_BeforeHead);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, BeforeHead) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_3 class], (void *)ptr)), ptr += objSize_BeforeHead);
     OrgJsoupParserHtmlTreeBuilderState_3_initWithNSString_withInt_(e, @"BeforeHead", 2);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHead) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_4 class], (void *)ptr), ptr += objSize_InHead);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHead) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_4 class], (void *)ptr)), ptr += objSize_InHead);
     OrgJsoupParserHtmlTreeBuilderState_4_initWithNSString_withInt_(e, @"InHead", 3);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHeadNoscript) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_5 class], (void *)ptr), ptr += objSize_InHeadNoscript);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InHeadNoscript) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_5 class], (void *)ptr)), ptr += objSize_InHeadNoscript);
     OrgJsoupParserHtmlTreeBuilderState_5_initWithNSString_withInt_(e, @"InHeadNoscript", 4);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterHead) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_6 class], (void *)ptr), ptr += objSize_AfterHead);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterHead) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_6 class], (void *)ptr)), ptr += objSize_AfterHead);
     OrgJsoupParserHtmlTreeBuilderState_6_initWithNSString_withInt_(e, @"AfterHead", 5);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_7 class], (void *)ptr), ptr += objSize_InBody);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_7 class], (void *)ptr)), ptr += objSize_InBody);
     OrgJsoupParserHtmlTreeBuilderState_7_initWithNSString_withInt_(e, @"InBody", 6);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, Text) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_8 class], (void *)ptr), ptr += objSize_Text);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, Text) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_8 class], (void *)ptr)), ptr += objSize_Text);
     OrgJsoupParserHtmlTreeBuilderState_8_initWithNSString_withInt_(e, @"Text", 7);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTable) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_9 class], (void *)ptr), ptr += objSize_InTable);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTable) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_9 class], (void *)ptr)), ptr += objSize_InTable);
     OrgJsoupParserHtmlTreeBuilderState_9_initWithNSString_withInt_(e, @"InTable", 8);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableText) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_10 class], (void *)ptr), ptr += objSize_InTableText);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableText) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_10 class], (void *)ptr)), ptr += objSize_InTableText);
     OrgJsoupParserHtmlTreeBuilderState_10_initWithNSString_withInt_(e, @"InTableText", 9);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCaption) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_11 class], (void *)ptr), ptr += objSize_InCaption);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCaption) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_11 class], (void *)ptr)), ptr += objSize_InCaption);
     OrgJsoupParserHtmlTreeBuilderState_11_initWithNSString_withInt_(e, @"InCaption", 10);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InColumnGroup) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_12 class], (void *)ptr), ptr += objSize_InColumnGroup);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InColumnGroup) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_12 class], (void *)ptr)), ptr += objSize_InColumnGroup);
     OrgJsoupParserHtmlTreeBuilderState_12_initWithNSString_withInt_(e, @"InColumnGroup", 11);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_13 class], (void *)ptr), ptr += objSize_InTableBody);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InTableBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_13 class], (void *)ptr)), ptr += objSize_InTableBody);
     OrgJsoupParserHtmlTreeBuilderState_13_initWithNSString_withInt_(e, @"InTableBody", 12);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InRow) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_14 class], (void *)ptr), ptr += objSize_InRow);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InRow) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_14 class], (void *)ptr)), ptr += objSize_InRow);
     OrgJsoupParserHtmlTreeBuilderState_14_initWithNSString_withInt_(e, @"InRow", 13);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCell) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_15 class], (void *)ptr), ptr += objSize_InCell);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InCell) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_15 class], (void *)ptr)), ptr += objSize_InCell);
     OrgJsoupParserHtmlTreeBuilderState_15_initWithNSString_withInt_(e, @"InCell", 14);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelect) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_16 class], (void *)ptr), ptr += objSize_InSelect);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelect) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_16 class], (void *)ptr)), ptr += objSize_InSelect);
     OrgJsoupParserHtmlTreeBuilderState_16_initWithNSString_withInt_(e, @"InSelect", 15);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelectInTable) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_17 class], (void *)ptr), ptr += objSize_InSelectInTable);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InSelectInTable) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_17 class], (void *)ptr)), ptr += objSize_InSelectInTable);
     OrgJsoupParserHtmlTreeBuilderState_17_initWithNSString_withInt_(e, @"InSelectInTable", 16);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_18 class], (void *)ptr), ptr += objSize_AfterBody);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_18 class], (void *)ptr)), ptr += objSize_AfterBody);
     OrgJsoupParserHtmlTreeBuilderState_18_initWithNSString_withInt_(e, @"AfterBody", 17);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InFrameset) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_19 class], (void *)ptr), ptr += objSize_InFrameset);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, InFrameset) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_19 class], (void *)ptr)), ptr += objSize_InFrameset);
     OrgJsoupParserHtmlTreeBuilderState_19_initWithNSString_withInt_(e, @"InFrameset", 18);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterFrameset) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_20 class], (void *)ptr), ptr += objSize_AfterFrameset);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterFrameset) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_20 class], (void *)ptr)), ptr += objSize_AfterFrameset);
     OrgJsoupParserHtmlTreeBuilderState_20_initWithNSString_withInt_(e, @"AfterFrameset", 19);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_21 class], (void *)ptr), ptr += objSize_AfterAfterBody);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterBody) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_21 class], (void *)ptr)), ptr += objSize_AfterAfterBody);
     OrgJsoupParserHtmlTreeBuilderState_21_initWithNSString_withInt_(e, @"AfterAfterBody", 20);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterFrameset) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_22 class], (void *)ptr), ptr += objSize_AfterAfterFrameset);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, AfterAfterFrameset) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_22 class], (void *)ptr)), ptr += objSize_AfterAfterFrameset);
     OrgJsoupParserHtmlTreeBuilderState_22_initWithNSString_withInt_(e, @"AfterAfterFrameset", 21);
-    (JreEnum(OrgJsoupParserHtmlTreeBuilderState, ForeignContent) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_23 class], (void *)ptr), ptr += objSize_ForeignContent);
+    ((void) (JreEnum(OrgJsoupParserHtmlTreeBuilderState, ForeignContent) = e = objc_constructInstance([OrgJsoupParserHtmlTreeBuilderState_23 class], (void *)ptr)), ptr += objSize_ForeignContent);
     OrgJsoupParserHtmlTreeBuilderState_23_initWithNSString_withInt_(e, @"ForeignContent", 22);
     JreStrongAssign(&OrgJsoupParserHtmlTreeBuilderState_nullString, NSString_java_valueOfChar_(0x0000));
     J2OBJC_SET_INITIALIZED(OrgJsoupParserHtmlTreeBuilderState)
@@ -751,6 +752,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserHtmlTreeBuilderState)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -812,6 +814,7 @@ void OrgJsoupParserHtmlTreeBuilderState_1_initWithNSString_withInt_(OrgJsoupPars
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
@@ -880,6 +883,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_2_anythingElseWithOrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -988,6 +992,7 @@ void OrgJsoupParserHtmlTreeBuilderState_3_initWithNSString_withInt_(OrgJsoupPars
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserTreeBuilder:);
   #pragma clang diagnostic pop
@@ -1054,6 +1059,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_4_anythingElseWithOrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
@@ -1149,6 +1155,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_5_anythingElseWithOrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
@@ -1725,6 +1732,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_6_anythingElseWithOrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anyOtherEndTagWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
@@ -1770,6 +1778,7 @@ void OrgJsoupParserHtmlTreeBuilderState_7_initWithNSString_withInt_(OrgJsoupPars
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -1912,6 +1921,7 @@ void OrgJsoupParserHtmlTreeBuilderState_8_initWithNSString_withInt_(OrgJsoupPars
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
@@ -1979,6 +1989,7 @@ void OrgJsoupParserHtmlTreeBuilderState_9_initWithNSString_withInt_(OrgJsoupPars
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2037,6 +2048,7 @@ void OrgJsoupParserHtmlTreeBuilderState_10_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2118,6 +2130,7 @@ void OrgJsoupParserHtmlTreeBuilderState_11_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserTreeBuilder:);
   #pragma clang diagnostic pop
@@ -2218,6 +2231,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_12_anythingElseWithOrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(exitTableBodyWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[2].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
@@ -2327,6 +2341,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_13_anythingElseWithOrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[2].selector = @selector(handleMissingTrWithOrgJsoupParserToken:withOrgJsoupParserTreeBuilder:);
@@ -2423,6 +2438,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_14_handleMissingTrWithOrgJsoupParser
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[2].selector = @selector(closeCellWithOrgJsoupParserHtmlTreeBuilder:);
@@ -2554,6 +2570,7 @@ void OrgJsoupParserHtmlTreeBuilderState_15_closeCellWithOrgJsoupParserHtmlTreeBu
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
@@ -2606,6 +2623,7 @@ jboolean OrgJsoupParserHtmlTreeBuilderState_16_anythingElseWithOrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2666,6 +2684,7 @@ void OrgJsoupParserHtmlTreeBuilderState_17_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2749,6 +2768,7 @@ void OrgJsoupParserHtmlTreeBuilderState_18_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2805,6 +2825,7 @@ void OrgJsoupParserHtmlTreeBuilderState_19_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2849,6 +2870,7 @@ void OrgJsoupParserHtmlTreeBuilderState_20_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2895,6 +2917,7 @@ void OrgJsoupParserHtmlTreeBuilderState_21_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2926,6 +2949,7 @@ void OrgJsoupParserHtmlTreeBuilderState_22_initWithNSString_withInt_(OrgJsoupPar
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(processWithOrgJsoupParserToken:withOrgJsoupParserHtmlTreeBuilder:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "process", "LOrgJsoupParserToken;LOrgJsoupParserHtmlTreeBuilder;", "LOrgJsoupParserHtmlTreeBuilderState;" };
@@ -2944,7 +2968,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupParserHtmlTreeBuilderState_Constants)
 @implementation OrgJsoupParserHtmlTreeBuilderState_Constants
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserHtmlTreeBuilderState_Constants_init(self);
   return self;
 }
@@ -2956,6 +2980,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {

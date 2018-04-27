@@ -22,8 +22,8 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParseErrorList, INITIAL_CAPACITY, jin
 
 @implementation OrgJsoupParserParseErrorList
 
-- (instancetype)initWithInt:(jint)initialCapacity
-                    withInt:(jint)maxSize {
+- (instancetype __nonnull)initWithInt:(jint)initialCapacity
+                              withInt:(jint)maxSize {
   OrgJsoupParserParseErrorList_initWithInt_withInt_(self, initialCapacity, maxSize);
   return self;
 }
@@ -45,7 +45,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParseErrorList, INITIAL_CAPACITY, jin
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 + (const J2ObjcClassInfo *)__metadata {
@@ -58,6 +58,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParseErrorList, INITIAL_CAPACITY, jin
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithInt:withInt:);
   methods[1].selector = @selector(canAddError);
   methods[2].selector = @selector(getMaxSize);

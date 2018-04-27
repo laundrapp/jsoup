@@ -15,8 +15,8 @@
   id<JavaUtilListIterator> iter_;
 }
 
-- (instancetype)initWithOrgJsoupHelperDescendableLinkedList:(OrgJsoupHelperDescendableLinkedList *)outer$
-                                                    withInt:(jint)index;
+- (instancetype __nonnull)initWithOrgJsoupHelperDescendableLinkedList:(OrgJsoupHelperDescendableLinkedList *)outer$
+                                                              withInt:(jint)index;
 
 /*!
  @brief Check if there is another element on the list.
@@ -52,7 +52,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperDescendableLinkedList_DescendingIterato
 @implementation OrgJsoupHelperDescendableLinkedList
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperDescendableLinkedList_init(self);
   return self;
 }
@@ -75,7 +75,7 @@ J2OBJC_IGNORE_DESIGNATED_END
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 - (void)dealloc {
@@ -93,6 +93,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(pushWithId:);
   methods[2].selector = @selector(peekLast);
@@ -122,8 +123,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperDescendableLinkedList)
 
 @implementation OrgJsoupHelperDescendableLinkedList_DescendingIterator
 
-- (instancetype)initWithOrgJsoupHelperDescendableLinkedList:(OrgJsoupHelperDescendableLinkedList *)outer$
-                                                    withInt:(jint)index {
+- (instancetype __nonnull)initWithOrgJsoupHelperDescendableLinkedList:(OrgJsoupHelperDescendableLinkedList *)outer$
+                                                              withInt:(jint)index {
   OrgJsoupHelperDescendableLinkedList_DescendingIterator_initWithOrgJsoupHelperDescendableLinkedList_withInt_(self, outer$, index);
   return self;
 }
@@ -158,6 +159,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperDescendableLinkedList)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupHelperDescendableLinkedList:withInt:);
   methods[1].selector = @selector(hasNext);
   methods[2].selector = @selector(next);

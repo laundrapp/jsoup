@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupSelectNodeTraversor
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectNodeTraversor_) && (INCLUDE_ALL_OrgJsoupSelectNodeTraversor || defined(INCLUDE_OrgJsoupSelectNodeTraversor))
 #define OrgJsoupSelectNodeTraversor_
 
@@ -33,7 +38,7 @@
  @brief Create a new traversor.
  @param visitor a class implementing the <code>NodeVisitor</code>  interface, to be called when visiting each node.
  */
-- (instancetype)initWithOrgJsoupSelectNodeVisitor:(id<OrgJsoupSelectNodeVisitor>)visitor;
+- (instancetype __nonnull)initWithOrgJsoupSelectNodeVisitor:(id<OrgJsoupSelectNodeVisitor>)visitor;
 
 /*!
  @brief Start a depth-first traverse of the root and all of its descendants.
@@ -43,7 +48,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -59,4 +64,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectNodeTraversor)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectNodeTraversor")

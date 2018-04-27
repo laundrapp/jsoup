@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupHelperDescendableLinkedList
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupHelperDescendableLinkedList_) && (INCLUDE_ALL_OrgJsoupHelperDescendableLinkedList || defined(INCLUDE_OrgJsoupHelperDescendableLinkedList))
 #define OrgJsoupHelperDescendableLinkedList_
 
@@ -33,7 +38,7 @@
 /*!
  @brief Create a new DescendableLinkedList.
  */
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Get an iterator that starts and the end of the list and works towards the start.
@@ -63,7 +68,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -79,4 +84,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperDescendableLinkedList)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupHelperDescendableLinkedList")

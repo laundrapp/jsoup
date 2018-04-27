@@ -49,7 +49,7 @@ __attribute__((unused)) static NSString *OrgJsoupNodesAttributes_dataKeyWithNSSt
   OrgJsoupNodesAttributes *this$0_;
 }
 
-- (instancetype)initWithOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)outer$;
+- (instancetype __nonnull)initWithOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)outer$;
 
 - (id<JavaUtilSet>)entrySet;
 
@@ -99,7 +99,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesAttributes_Dataset)
   OrgJsoupNodesAttributes_Dataset *this$0_;
 }
 
-- (instancetype)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$;
+- (instancetype __nonnull)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$;
 
 - (id<JavaUtilIterator>)iterator;
 
@@ -124,7 +124,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesAttributes_Dataset_EntrySet)
   OrgJsoupNodesAttribute *attr_;
 }
 
-- (instancetype)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$;
+- (instancetype __nonnull)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$;
 
 - (jboolean)hasNext;
 
@@ -152,7 +152,7 @@ NSString *OrgJsoupNodesAttributes_dataPrefix = @"data-";
 @implementation OrgJsoupNodesAttributes
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupNodesAttributes_init(self);
   return self;
 }
@@ -279,7 +279,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 - (void)dealloc {
@@ -311,6 +311,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(getWithNSString:);
   methods[2].selector = @selector(putWithNSString:withNSString:);
@@ -368,7 +369,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes)
 
 @implementation OrgJsoupNodesAttributes_Dataset
 
-- (instancetype)initWithOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)outer$ {
+- (instancetype __nonnull)initWithOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)outer$ {
   OrgJsoupNodesAttributes_Dataset_initWithOrgJsoupNodesAttributes_(self, outer$);
   return self;
 }
@@ -399,6 +400,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupNodesAttributes:);
   methods[1].selector = @selector(entrySet);
   methods[2].selector = @selector(putWithId:withId:);
@@ -431,7 +433,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes_Dataset)
 
 @implementation OrgJsoupNodesAttributes_Dataset_EntrySet
 
-- (instancetype)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$ {
+- (instancetype __nonnull)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$ {
   OrgJsoupNodesAttributes_Dataset_EntrySet_initWithOrgJsoupNodesAttributes_Dataset_(self, outer$);
   return self;
 }
@@ -448,7 +450,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes_Dataset)
 }
 
 - (NSUInteger)countByEnumeratingWithState:(NSFastEnumerationState *)state objects:(__unsafe_unretained id *)stackbuf count:(NSUInteger)len {
-  return JreDefaultFastEnumeration(self, state, stackbuf, len);
+  return JreDefaultFastEnumeration(self, state, stackbuf);
 }
 
 - (void)dealloc {
@@ -464,6 +466,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes_Dataset)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupNodesAttributes_Dataset:);
   methods[1].selector = @selector(iterator);
   methods[2].selector = @selector(size);
@@ -495,7 +498,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes_Dataset_EntrySet)
 
 @implementation OrgJsoupNodesAttributes_Dataset_DatasetIterator
 
-- (instancetype)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$ {
+- (instancetype __nonnull)initWithOrgJsoupNodesAttributes_Dataset:(OrgJsoupNodesAttributes_Dataset *)outer$ {
   OrgJsoupNodesAttributes_Dataset_DatasetIterator_initWithOrgJsoupNodesAttributes_Dataset_(self, outer$);
   return self;
 }
@@ -536,6 +539,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesAttributes_Dataset_EntrySet)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupNodesAttributes_Dataset:);
   methods[1].selector = @selector(hasNext);
   methods[2].selector = @selector(next);

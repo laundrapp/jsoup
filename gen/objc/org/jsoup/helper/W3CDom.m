@@ -52,7 +52,7 @@ __attribute__((unused)) static void OrgJsoupHelperW3CDom_W3CBuilder_copyAttribut
 @implementation OrgJsoupHelperW3CDom
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupHelperW3CDom_init(self);
   return self;
 }
@@ -109,6 +109,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(fromJsoupWithOrgJsoupNodesDocument:);
   methods[2].selector = @selector(convertWithOrgJsoupNodesDocument:withOrgW3cDomDocument:);
@@ -141,8 +142,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperW3CDom)
 
 @implementation OrgJsoupHelperW3CDom_W3CBuilder
 
-- (instancetype)initWithOrgJsoupHelperW3CDom:(OrgJsoupHelperW3CDom *)outer$
-                       withOrgW3cDomDocument:(id<OrgW3cDomDocument>)doc {
+- (instancetype __nonnull)initWithOrgJsoupHelperW3CDom:(OrgJsoupHelperW3CDom *)outer$
+                                 withOrgW3cDomDocument:(id<OrgW3cDomDocument>)doc {
   OrgJsoupHelperW3CDom_W3CBuilder_initWithOrgJsoupHelperW3CDom_withOrgW3cDomDocument_(self, outer$, doc);
   return self;
 }
@@ -207,6 +208,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupHelperW3CDom)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupHelperW3CDom:withOrgW3cDomDocument:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);

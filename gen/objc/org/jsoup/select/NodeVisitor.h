@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupSelectNodeVisitor
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectNodeVisitor_) && (INCLUDE_ALL_OrgJsoupSelectNodeVisitor || defined(INCLUDE_OrgJsoupSelectNodeVisitor))
 #define OrgJsoupSelectNodeVisitor_
 
@@ -52,4 +57,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectNodeVisitor)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectNodeVisitor")

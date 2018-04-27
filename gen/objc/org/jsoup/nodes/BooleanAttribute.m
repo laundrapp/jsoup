@@ -9,7 +9,7 @@
 
 @implementation OrgJsoupNodesBooleanAttribute
 
-- (instancetype)initWithNSString:(NSString *)key {
+- (instancetype __nonnull)initWithNSString:(NSString *)key {
   OrgJsoupNodesBooleanAttribute_initWithNSString_(self, key);
   return self;
 }
@@ -25,6 +25,7 @@
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(isBooleanAttribute);
   #pragma clang diagnostic pop

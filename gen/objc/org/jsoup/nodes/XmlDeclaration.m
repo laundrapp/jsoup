@@ -21,9 +21,9 @@ NSString *OrgJsoupNodesXmlDeclaration_DECL_KEY = @"declaration";
 
 @implementation OrgJsoupNodesXmlDeclaration
 
-- (instancetype)initWithNSString:(NSString *)data
-                    withNSString:(NSString *)baseUri
-                     withBoolean:(jboolean)isProcessingInstruction {
+- (instancetype __nonnull)initWithNSString:(NSString *)data
+                              withNSString:(NSString *)baseUri
+                               withBoolean:(jboolean)isProcessingInstruction {
   OrgJsoupNodesXmlDeclaration_initWithNSString_withNSString_withBoolean_(self, data, baseUri, isProcessingInstruction);
   return self;
 }
@@ -77,6 +77,7 @@ NSString *OrgJsoupNodesXmlDeclaration_DECL_KEY = @"declaration";
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:withBoolean:);
   methods[1].selector = @selector(nodeName);
   methods[2].selector = @selector(getWholeDeclaration);

@@ -47,7 +47,7 @@ __attribute__((unused)) static NSString *OrgJsoupParserCharacterReader_cacheStri
 
 @implementation OrgJsoupParserCharacterReader
 
-- (instancetype)initWithNSString:(NSString *)input {
+- (instancetype __nonnull)initWithNSString:(NSString *)input {
   OrgJsoupParserCharacterReader_initWithNSString_(self, input);
   return self;
 }
@@ -392,6 +392,7 @@ __attribute__((unused)) static NSString *OrgJsoupParserCharacterReader_cacheStri
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(pos);
   methods[2].selector = @selector(isEmpty);

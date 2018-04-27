@@ -31,6 +31,11 @@
 #define INCLUDE_OrgJsoupSelectStructuralEvaluator 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectStructuralEvaluator_) && (INCLUDE_ALL_OrgJsoupSelectStructuralEvaluator || defined(INCLUDE_OrgJsoupSelectStructuralEvaluator))
 #define OrgJsoupSelectStructuralEvaluator_
 
@@ -48,7 +53,7 @@
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -80,7 +85,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -106,7 +111,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Root)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -115,7 +120,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Root)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -141,7 +146,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Has)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)node;
@@ -150,7 +155,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Has)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -176,7 +181,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Not)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -185,7 +190,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Not)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -211,7 +216,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Parent)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -220,7 +225,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_Parent)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -246,7 +251,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_ImmediateParent)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -255,7 +260,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_ImmediateParent)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -281,7 +286,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_PreviousSibling)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -290,7 +295,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_PreviousSibling)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -306,4 +311,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectStructuralEvaluator_ImmediatePreviousSi
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectStructuralEvaluator")

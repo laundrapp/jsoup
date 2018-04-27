@@ -16,8 +16,8 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesComment, COMMENT_KEY, NSString *)
 
 @implementation OrgJsoupNodesComment
 
-- (instancetype)initWithNSString:(NSString *)data
-                    withNSString:(NSString *)baseUri {
+- (instancetype __nonnull)initWithNSString:(NSString *)data
+                              withNSString:(NSString *)baseUri {
   OrgJsoupNodesComment_initWithNSString_withNSString_(self, data, baseUri);
   return self;
 }
@@ -57,6 +57,7 @@ J2OBJC_STATIC_FIELD_OBJ_FINAL(OrgJsoupNodesComment, COMMENT_KEY, NSString *)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:);
   methods[1].selector = @selector(nodeName);
   methods[2].selector = @selector(getData);

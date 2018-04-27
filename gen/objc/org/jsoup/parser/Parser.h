@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupParserParser
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupParserParser_) && (INCLUDE_ALL_OrgJsoupParserParser || defined(INCLUDE_OrgJsoupParserParser))
 #define OrgJsoupParserParser_
 
@@ -33,7 +38,7 @@
  @brief Create a new Parser, using the specified TreeBuilder
  @param treeBuilder TreeBuilder to use to parse input into Documents.
  */
-- (instancetype)initWithOrgJsoupParserTreeBuilder:(OrgJsoupParserTreeBuilder *)treeBuilder;
+- (instancetype __nonnull)initWithOrgJsoupParserTreeBuilder:(OrgJsoupParserTreeBuilder *)treeBuilder;
 
 /*!
  @brief Retrieve the parse errors, if any, from the last parse.
@@ -141,7 +146,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -173,4 +178,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserParser)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupParserParser")

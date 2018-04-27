@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesNode
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesNode_) && (INCLUDE_ALL_OrgJsoupNodesNode || defined(INCLUDE_OrgJsoupNodesNode))
 #define OrgJsoupNodesNode_
 
@@ -312,17 +317,17 @@
 /*!
  @brief Default constructor.Doesn't setup base uri, children, or attributes; use with caution.
  */
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithNSString:(NSString *)baseUri;
 
 /*!
  @brief Create a new Node.
  @param baseUri base URI
  @param attributes attributes (not null, but may be empty)
  */
-- (instancetype)initWithNSString:(NSString *)baseUri
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
+- (instancetype __nonnull)initWithNSString:(NSString *)baseUri
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
 
 - (void)addChildrenWithInt:(jint)index
 withOrgJsoupNodesNodeArray:(IOSObjectArray *)children;
@@ -387,4 +392,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesNode)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesNode")

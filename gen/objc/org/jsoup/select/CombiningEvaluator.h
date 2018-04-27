@@ -19,6 +19,11 @@
 #define INCLUDE_OrgJsoupSelectCombiningEvaluator 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectCombiningEvaluator_) && (INCLUDE_ALL_OrgJsoupSelectCombiningEvaluator || defined(INCLUDE_OrgJsoupSelectCombiningEvaluator))
 #define OrgJsoupSelectCombiningEvaluator_
 
@@ -40,9 +45,9 @@
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators;
 
 - (void)replaceRightMostEvaluatorWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)replacement;
 
@@ -82,13 +87,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCombiningEvaluator)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators;
 
-- (instancetype)initWithOrgJsoupSelectEvaluatorArray:(IOSObjectArray *)evaluators;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluatorArray:(IOSObjectArray *)evaluators;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -130,13 +135,13 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCombiningEvaluator_And)
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Create a new Or evaluator.The initial evaluators are ANDed together and used as the first clause of the OR.
  @param evaluators initial OR clause (these are wrapped into an AND evaluator).
  */
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators;
 
 @end
 
@@ -158,4 +163,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCombiningEvaluator_Or)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectCombiningEvaluator")

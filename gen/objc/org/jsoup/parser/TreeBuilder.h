@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupParserTreeBuilder
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupParserTreeBuilder_) && (INCLUDE_ALL_OrgJsoupParserTreeBuilder || defined(INCLUDE_OrgJsoupParserTreeBuilder))
 #define OrgJsoupParserTreeBuilder_
 
@@ -62,7 +67,7 @@
 
 #pragma mark Package-Private
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (OrgJsoupNodesDocument *)parseWithNSString:(NSString *)input
                                 withNSString:(NSString *)baseUri;
@@ -89,4 +94,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserTreeBuilder)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupParserTreeBuilder")

@@ -115,6 +115,11 @@
 #define INCLUDE_OrgJsoupSelectEvaluator 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectEvaluator_) && (INCLUDE_ALL_OrgJsoupSelectEvaluator || defined(INCLUDE_OrgJsoupSelectEvaluator))
 #define OrgJsoupSelectEvaluator_
 
@@ -139,7 +144,7 @@
 
 #pragma mark Protected
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -163,7 +168,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)tagName;
+- (instancetype __nonnull)initWithNSString:(NSString *)tagName;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -172,7 +177,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -200,7 +205,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Tag)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)id_;
+- (instancetype __nonnull)initWithNSString:(NSString *)id_;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -209,7 +214,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Tag)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -237,7 +242,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Id)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)className_;
+- (instancetype __nonnull)initWithNSString:(NSString *)className_;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -246,7 +251,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Id)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -274,7 +279,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Class)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key;
+- (instancetype __nonnull)initWithNSString:(NSString *)key;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -283,7 +288,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Class)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -311,7 +316,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Attribute)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)keyPrefix;
+- (instancetype __nonnull)initWithNSString:(NSString *)keyPrefix;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -320,7 +325,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Attribute)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -350,8 +355,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeStarting)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 @end
 
@@ -378,8 +383,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeKeyPair)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -413,8 +418,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValue)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -447,8 +452,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueNot)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -481,8 +486,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueStarting)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -515,8 +520,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueEnding)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -554,8 +559,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueContaining)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)key
-        withJavaUtilRegexPattern:(JavaUtilRegexPattern *)pattern;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                  withJavaUtilRegexPattern:(JavaUtilRegexPattern *)pattern;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -564,7 +569,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueContaining)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -595,7 +600,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AttributeWithValueMatching)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -630,7 +635,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_AllElements)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)index;
+- (instancetype __nonnull)initWithInt:(jint)index;
 
 @end
 
@@ -654,7 +659,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IndexEvaluator)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)index;
+- (instancetype __nonnull)initWithInt:(jint)index;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -687,7 +692,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IndexLessThan)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)index;
+- (instancetype __nonnull)initWithInt:(jint)index;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -720,7 +725,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IndexGreaterThan)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)index;
+- (instancetype __nonnull)initWithInt:(jint)index;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -753,7 +758,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IndexEquals)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -787,10 +792,10 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsLastChild)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)b;
 
-- (instancetype)initWithInt:(jint)a
-                    withInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)a
+                              withInt:(jint)b;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -828,8 +833,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_CssNthEvaluator)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)a
-                    withInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)a
+                              withInt:(jint)b;
 
 #pragma mark Protected
 
@@ -840,7 +845,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_CssNthEvaluator)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -863,14 +868,14 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthOfType)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)description;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithInt:(jint)arg0
-                    withInt:(jint)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithInt:(jint)arg0
+                              withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -895,8 +900,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsFirstOfType)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)a
-                    withInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)a
+                              withInt:(jint)b;
 
 #pragma mark Protected
 
@@ -907,7 +912,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsFirstOfType)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -930,14 +935,14 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthLastOfType)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (NSString *)description;
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithInt:(jint)arg0
-                    withInt:(jint)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithInt:(jint)arg0
+                              withInt:(jint)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -966,8 +971,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsLastOfType)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)a
-                    withInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)a
+                              withInt:(jint)b;
 
 #pragma mark Protected
 
@@ -978,7 +983,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsLastOfType)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -1007,8 +1012,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthChild)
 
 #pragma mark Public
 
-- (instancetype)initWithInt:(jint)a
-                    withInt:(jint)b;
+- (instancetype __nonnull)initWithInt:(jint)a
+                              withInt:(jint)b;
 
 #pragma mark Protected
 
@@ -1019,7 +1024,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthChild)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithInt:(jint)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithInt:(jint)arg0 NS_UNAVAILABLE;
 
 @end
 
@@ -1047,7 +1052,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsNthLastChild)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1081,7 +1086,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsFirstChild)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1111,7 +1116,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsRoot)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1141,7 +1146,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsOnlyChild)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1171,7 +1176,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsOnlyOfType)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1204,7 +1209,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsEmpty)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)searchText;
+- (instancetype __nonnull)initWithNSString:(NSString *)searchText;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1213,7 +1218,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_IsEmpty)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -1241,7 +1246,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_ContainsText)
 
 #pragma mark Public
 
-- (instancetype)initWithNSString:(NSString *)searchText;
+- (instancetype __nonnull)initWithNSString:(NSString *)searchText;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1250,7 +1255,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_ContainsText)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -1279,7 +1284,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_ContainsOwnText)
 
 #pragma mark Public
 
-- (instancetype)initWithJavaUtilRegexPattern:(JavaUtilRegexPattern *)pattern;
+- (instancetype __nonnull)initWithJavaUtilRegexPattern:(JavaUtilRegexPattern *)pattern;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1288,7 +1293,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_ContainsOwnText)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -1317,7 +1322,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Matches)
 
 #pragma mark Public
 
-- (instancetype)initWithJavaUtilRegexPattern:(JavaUtilRegexPattern *)pattern;
+- (instancetype __nonnull)initWithJavaUtilRegexPattern:(JavaUtilRegexPattern *)pattern;
 
 - (jboolean)matchesWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
                    withOrgJsoupNodesElement:(OrgJsoupNodesElement *)element;
@@ -1326,7 +1331,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_Matches)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -1342,4 +1347,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectEvaluator_MatchesOwn)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectEvaluator")

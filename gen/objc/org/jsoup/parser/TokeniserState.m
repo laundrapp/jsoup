@@ -848,6 +848,7 @@ OrgJsoupParserTokeniserState *OrgJsoupParserTokeniserState_values_[67];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   methods[1].selector = @selector(handleDataEndTagWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:withOrgJsoupParserTokeniserState:);
   methods[2].selector = @selector(handleDataDoubleEscapeTagWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:withOrgJsoupParserTokeniserState:withOrgJsoupParserTokeniserState:);
@@ -1074,139 +1075,139 @@ OrgJsoupParserTokeniserState *OrgJsoupParserTokeniserState_values_[67];
     allocSize += objSize_CdataSection;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    (JreEnum(OrgJsoupParserTokeniserState, Data) = e = objc_constructInstance([OrgJsoupParserTokeniserState_1 class], (void *)ptr), ptr += objSize_Data);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, Data) = e = objc_constructInstance([OrgJsoupParserTokeniserState_1 class], (void *)ptr)), ptr += objSize_Data);
     OrgJsoupParserTokeniserState_1_initWithNSString_withInt_(e, @"Data", 0);
-    (JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInData) = e = objc_constructInstance([OrgJsoupParserTokeniserState_2 class], (void *)ptr), ptr += objSize_CharacterReferenceInData);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInData) = e = objc_constructInstance([OrgJsoupParserTokeniserState_2 class], (void *)ptr)), ptr += objSize_CharacterReferenceInData);
     OrgJsoupParserTokeniserState_2_initWithNSString_withInt_(e, @"CharacterReferenceInData", 1);
-    (JreEnum(OrgJsoupParserTokeniserState, Rcdata) = e = objc_constructInstance([OrgJsoupParserTokeniserState_3 class], (void *)ptr), ptr += objSize_Rcdata);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, Rcdata) = e = objc_constructInstance([OrgJsoupParserTokeniserState_3 class], (void *)ptr)), ptr += objSize_Rcdata);
     OrgJsoupParserTokeniserState_3_initWithNSString_withInt_(e, @"Rcdata", 2);
-    (JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInRcdata) = e = objc_constructInstance([OrgJsoupParserTokeniserState_4 class], (void *)ptr), ptr += objSize_CharacterReferenceInRcdata);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CharacterReferenceInRcdata) = e = objc_constructInstance([OrgJsoupParserTokeniserState_4 class], (void *)ptr)), ptr += objSize_CharacterReferenceInRcdata);
     OrgJsoupParserTokeniserState_4_initWithNSString_withInt_(e, @"CharacterReferenceInRcdata", 3);
-    (JreEnum(OrgJsoupParserTokeniserState, Rawtext) = e = objc_constructInstance([OrgJsoupParserTokeniserState_5 class], (void *)ptr), ptr += objSize_Rawtext);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, Rawtext) = e = objc_constructInstance([OrgJsoupParserTokeniserState_5 class], (void *)ptr)), ptr += objSize_Rawtext);
     OrgJsoupParserTokeniserState_5_initWithNSString_withInt_(e, @"Rawtext", 4);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptData) = e = objc_constructInstance([OrgJsoupParserTokeniserState_6 class], (void *)ptr), ptr += objSize_ScriptData);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptData) = e = objc_constructInstance([OrgJsoupParserTokeniserState_6 class], (void *)ptr)), ptr += objSize_ScriptData);
     OrgJsoupParserTokeniserState_6_initWithNSString_withInt_(e, @"ScriptData", 5);
-    (JreEnum(OrgJsoupParserTokeniserState, PLAINTEXT) = e = objc_constructInstance([OrgJsoupParserTokeniserState_7 class], (void *)ptr), ptr += objSize_PLAINTEXT);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, PLAINTEXT) = e = objc_constructInstance([OrgJsoupParserTokeniserState_7 class], (void *)ptr)), ptr += objSize_PLAINTEXT);
     OrgJsoupParserTokeniserState_7_initWithNSString_withInt_(e, @"PLAINTEXT", 6);
-    (JreEnum(OrgJsoupParserTokeniserState, TagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_8 class], (void *)ptr), ptr += objSize_TagOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, TagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_8 class], (void *)ptr)), ptr += objSize_TagOpen);
     OrgJsoupParserTokeniserState_8_initWithNSString_withInt_(e, @"TagOpen", 7);
-    (JreEnum(OrgJsoupParserTokeniserState, EndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_9 class], (void *)ptr), ptr += objSize_EndTagOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, EndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_9 class], (void *)ptr)), ptr += objSize_EndTagOpen);
     OrgJsoupParserTokeniserState_9_initWithNSString_withInt_(e, @"EndTagOpen", 8);
-    (JreEnum(OrgJsoupParserTokeniserState, TagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_10 class], (void *)ptr), ptr += objSize_TagName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, TagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_10 class], (void *)ptr)), ptr += objSize_TagName);
     OrgJsoupParserTokeniserState_10_initWithNSString_withInt_(e, @"TagName", 9);
-    (JreEnum(OrgJsoupParserTokeniserState, RcdataLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_11 class], (void *)ptr), ptr += objSize_RcdataLessthanSign);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, RcdataLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_11 class], (void *)ptr)), ptr += objSize_RcdataLessthanSign);
     OrgJsoupParserTokeniserState_11_initWithNSString_withInt_(e, @"RcdataLessthanSign", 10);
-    (JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_12 class], (void *)ptr), ptr += objSize_RCDATAEndTagOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_12 class], (void *)ptr)), ptr += objSize_RCDATAEndTagOpen);
     OrgJsoupParserTokeniserState_12_initWithNSString_withInt_(e, @"RCDATAEndTagOpen", 11);
-    (JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_13 class], (void *)ptr), ptr += objSize_RCDATAEndTagName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, RCDATAEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_13 class], (void *)ptr)), ptr += objSize_RCDATAEndTagName);
     OrgJsoupParserTokeniserState_13_initWithNSString_withInt_(e, @"RCDATAEndTagName", 12);
-    (JreEnum(OrgJsoupParserTokeniserState, RawtextLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_14 class], (void *)ptr), ptr += objSize_RawtextLessthanSign);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, RawtextLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_14 class], (void *)ptr)), ptr += objSize_RawtextLessthanSign);
     OrgJsoupParserTokeniserState_14_initWithNSString_withInt_(e, @"RawtextLessthanSign", 13);
-    (JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_15 class], (void *)ptr), ptr += objSize_RawtextEndTagOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_15 class], (void *)ptr)), ptr += objSize_RawtextEndTagOpen);
     OrgJsoupParserTokeniserState_15_initWithNSString_withInt_(e, @"RawtextEndTagOpen", 14);
-    (JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_16 class], (void *)ptr), ptr += objSize_RawtextEndTagName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, RawtextEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_16 class], (void *)ptr)), ptr += objSize_RawtextEndTagName);
     OrgJsoupParserTokeniserState_16_initWithNSString_withInt_(e, @"RawtextEndTagName", 15);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_17 class], (void *)ptr), ptr += objSize_ScriptDataLessthanSign);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_17 class], (void *)ptr)), ptr += objSize_ScriptDataLessthanSign);
     OrgJsoupParserTokeniserState_17_initWithNSString_withInt_(e, @"ScriptDataLessthanSign", 16);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_18 class], (void *)ptr), ptr += objSize_ScriptDataEndTagOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_18 class], (void *)ptr)), ptr += objSize_ScriptDataEndTagOpen);
     OrgJsoupParserTokeniserState_18_initWithNSString_withInt_(e, @"ScriptDataEndTagOpen", 17);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_19 class], (void *)ptr), ptr += objSize_ScriptDataEndTagName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_19 class], (void *)ptr)), ptr += objSize_ScriptDataEndTagName);
     OrgJsoupParserTokeniserState_19_initWithNSString_withInt_(e, @"ScriptDataEndTagName", 18);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStart) = e = objc_constructInstance([OrgJsoupParserTokeniserState_20 class], (void *)ptr), ptr += objSize_ScriptDataEscapeStart);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStart) = e = objc_constructInstance([OrgJsoupParserTokeniserState_20 class], (void *)ptr)), ptr += objSize_ScriptDataEscapeStart);
     OrgJsoupParserTokeniserState_20_initWithNSString_withInt_(e, @"ScriptDataEscapeStart", 19);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStartDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_21 class], (void *)ptr), ptr += objSize_ScriptDataEscapeStartDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapeStartDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_21 class], (void *)ptr)), ptr += objSize_ScriptDataEscapeStartDash);
     OrgJsoupParserTokeniserState_21_initWithNSString_withInt_(e, @"ScriptDataEscapeStartDash", 20);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscaped) = e = objc_constructInstance([OrgJsoupParserTokeniserState_22 class], (void *)ptr), ptr += objSize_ScriptDataEscaped);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscaped) = e = objc_constructInstance([OrgJsoupParserTokeniserState_22 class], (void *)ptr)), ptr += objSize_ScriptDataEscaped);
     OrgJsoupParserTokeniserState_22_initWithNSString_withInt_(e, @"ScriptDataEscaped", 21);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_23 class], (void *)ptr), ptr += objSize_ScriptDataEscapedDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_23 class], (void *)ptr)), ptr += objSize_ScriptDataEscapedDash);
     OrgJsoupParserTokeniserState_23_initWithNSString_withInt_(e, @"ScriptDataEscapedDash", 22);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDashDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_24 class], (void *)ptr), ptr += objSize_ScriptDataEscapedDashDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedDashDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_24 class], (void *)ptr)), ptr += objSize_ScriptDataEscapedDashDash);
     OrgJsoupParserTokeniserState_24_initWithNSString_withInt_(e, @"ScriptDataEscapedDashDash", 23);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_25 class], (void *)ptr), ptr += objSize_ScriptDataEscapedLessthanSign);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_25 class], (void *)ptr)), ptr += objSize_ScriptDataEscapedLessthanSign);
     OrgJsoupParserTokeniserState_25_initWithNSString_withInt_(e, @"ScriptDataEscapedLessthanSign", 24);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_26 class], (void *)ptr), ptr += objSize_ScriptDataEscapedEndTagOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_26 class], (void *)ptr)), ptr += objSize_ScriptDataEscapedEndTagOpen);
     OrgJsoupParserTokeniserState_26_initWithNSString_withInt_(e, @"ScriptDataEscapedEndTagOpen", 25);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_27 class], (void *)ptr), ptr += objSize_ScriptDataEscapedEndTagName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataEscapedEndTagName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_27 class], (void *)ptr)), ptr += objSize_ScriptDataEscapedEndTagName);
     OrgJsoupParserTokeniserState_27_initWithNSString_withInt_(e, @"ScriptDataEscapedEndTagName", 26);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeStart) = e = objc_constructInstance([OrgJsoupParserTokeniserState_28 class], (void *)ptr), ptr += objSize_ScriptDataDoubleEscapeStart);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeStart) = e = objc_constructInstance([OrgJsoupParserTokeniserState_28 class], (void *)ptr)), ptr += objSize_ScriptDataDoubleEscapeStart);
     OrgJsoupParserTokeniserState_28_initWithNSString_withInt_(e, @"ScriptDataDoubleEscapeStart", 27);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscaped) = e = objc_constructInstance([OrgJsoupParserTokeniserState_29 class], (void *)ptr), ptr += objSize_ScriptDataDoubleEscaped);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscaped) = e = objc_constructInstance([OrgJsoupParserTokeniserState_29 class], (void *)ptr)), ptr += objSize_ScriptDataDoubleEscaped);
     OrgJsoupParserTokeniserState_29_initWithNSString_withInt_(e, @"ScriptDataDoubleEscaped", 28);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_30 class], (void *)ptr), ptr += objSize_ScriptDataDoubleEscapedDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_30 class], (void *)ptr)), ptr += objSize_ScriptDataDoubleEscapedDash);
     OrgJsoupParserTokeniserState_30_initWithNSString_withInt_(e, @"ScriptDataDoubleEscapedDash", 29);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDashDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_31 class], (void *)ptr), ptr += objSize_ScriptDataDoubleEscapedDashDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedDashDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_31 class], (void *)ptr)), ptr += objSize_ScriptDataDoubleEscapedDashDash);
     OrgJsoupParserTokeniserState_31_initWithNSString_withInt_(e, @"ScriptDataDoubleEscapedDashDash", 30);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_32 class], (void *)ptr), ptr += objSize_ScriptDataDoubleEscapedLessthanSign);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapedLessthanSign) = e = objc_constructInstance([OrgJsoupParserTokeniserState_32 class], (void *)ptr)), ptr += objSize_ScriptDataDoubleEscapedLessthanSign);
     OrgJsoupParserTokeniserState_32_initWithNSString_withInt_(e, @"ScriptDataDoubleEscapedLessthanSign", 31);
-    (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeEnd) = e = objc_constructInstance([OrgJsoupParserTokeniserState_33 class], (void *)ptr), ptr += objSize_ScriptDataDoubleEscapeEnd);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, ScriptDataDoubleEscapeEnd) = e = objc_constructInstance([OrgJsoupParserTokeniserState_33 class], (void *)ptr)), ptr += objSize_ScriptDataDoubleEscapeEnd);
     OrgJsoupParserTokeniserState_33_initWithNSString_withInt_(e, @"ScriptDataDoubleEscapeEnd", 32);
-    (JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_34 class], (void *)ptr), ptr += objSize_BeforeAttributeName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_34 class], (void *)ptr)), ptr += objSize_BeforeAttributeName);
     OrgJsoupParserTokeniserState_34_initWithNSString_withInt_(e, @"BeforeAttributeName", 33);
-    (JreEnum(OrgJsoupParserTokeniserState, AttributeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_35 class], (void *)ptr), ptr += objSize_AttributeName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AttributeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_35 class], (void *)ptr)), ptr += objSize_AttributeName);
     OrgJsoupParserTokeniserState_35_initWithNSString_withInt_(e, @"AttributeName", 34);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterAttributeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_36 class], (void *)ptr), ptr += objSize_AfterAttributeName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterAttributeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_36 class], (void *)ptr)), ptr += objSize_AfterAttributeName);
     OrgJsoupParserTokeniserState_36_initWithNSString_withInt_(e, @"AfterAttributeName", 35);
-    (JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeValue) = e = objc_constructInstance([OrgJsoupParserTokeniserState_37 class], (void *)ptr), ptr += objSize_BeforeAttributeValue);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BeforeAttributeValue) = e = objc_constructInstance([OrgJsoupParserTokeniserState_37 class], (void *)ptr)), ptr += objSize_BeforeAttributeValue);
     OrgJsoupParserTokeniserState_37_initWithNSString_withInt_(e, @"BeforeAttributeValue", 36);
-    (JreEnum(OrgJsoupParserTokeniserState, AttributeValue_doubleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_38 class], (void *)ptr), ptr += objSize_AttributeValue_doubleQuoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AttributeValue_doubleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_38 class], (void *)ptr)), ptr += objSize_AttributeValue_doubleQuoted);
     OrgJsoupParserTokeniserState_38_initWithNSString_withInt_(e, @"AttributeValue_doubleQuoted", 37);
-    (JreEnum(OrgJsoupParserTokeniserState, AttributeValue_singleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_39 class], (void *)ptr), ptr += objSize_AttributeValue_singleQuoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AttributeValue_singleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_39 class], (void *)ptr)), ptr += objSize_AttributeValue_singleQuoted);
     OrgJsoupParserTokeniserState_39_initWithNSString_withInt_(e, @"AttributeValue_singleQuoted", 38);
-    (JreEnum(OrgJsoupParserTokeniserState, AttributeValue_unquoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_40 class], (void *)ptr), ptr += objSize_AttributeValue_unquoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AttributeValue_unquoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_40 class], (void *)ptr)), ptr += objSize_AttributeValue_unquoted);
     OrgJsoupParserTokeniserState_40_initWithNSString_withInt_(e, @"AttributeValue_unquoted", 39);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterAttributeValue_quoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_41 class], (void *)ptr), ptr += objSize_AfterAttributeValue_quoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterAttributeValue_quoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_41 class], (void *)ptr)), ptr += objSize_AfterAttributeValue_quoted);
     OrgJsoupParserTokeniserState_41_initWithNSString_withInt_(e, @"AfterAttributeValue_quoted", 40);
-    (JreEnum(OrgJsoupParserTokeniserState, SelfClosingStartTag) = e = objc_constructInstance([OrgJsoupParserTokeniserState_42 class], (void *)ptr), ptr += objSize_SelfClosingStartTag);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, SelfClosingStartTag) = e = objc_constructInstance([OrgJsoupParserTokeniserState_42 class], (void *)ptr)), ptr += objSize_SelfClosingStartTag);
     OrgJsoupParserTokeniserState_42_initWithNSString_withInt_(e, @"SelfClosingStartTag", 41);
-    (JreEnum(OrgJsoupParserTokeniserState, BogusComment) = e = objc_constructInstance([OrgJsoupParserTokeniserState_43 class], (void *)ptr), ptr += objSize_BogusComment);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BogusComment) = e = objc_constructInstance([OrgJsoupParserTokeniserState_43 class], (void *)ptr)), ptr += objSize_BogusComment);
     OrgJsoupParserTokeniserState_43_initWithNSString_withInt_(e, @"BogusComment", 42);
-    (JreEnum(OrgJsoupParserTokeniserState, MarkupDeclarationOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_44 class], (void *)ptr), ptr += objSize_MarkupDeclarationOpen);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, MarkupDeclarationOpen) = e = objc_constructInstance([OrgJsoupParserTokeniserState_44 class], (void *)ptr)), ptr += objSize_MarkupDeclarationOpen);
     OrgJsoupParserTokeniserState_44_initWithNSString_withInt_(e, @"MarkupDeclarationOpen", 43);
-    (JreEnum(OrgJsoupParserTokeniserState, CommentStart) = e = objc_constructInstance([OrgJsoupParserTokeniserState_45 class], (void *)ptr), ptr += objSize_CommentStart);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CommentStart) = e = objc_constructInstance([OrgJsoupParserTokeniserState_45 class], (void *)ptr)), ptr += objSize_CommentStart);
     OrgJsoupParserTokeniserState_45_initWithNSString_withInt_(e, @"CommentStart", 44);
-    (JreEnum(OrgJsoupParserTokeniserState, CommentStartDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_46 class], (void *)ptr), ptr += objSize_CommentStartDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CommentStartDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_46 class], (void *)ptr)), ptr += objSize_CommentStartDash);
     OrgJsoupParserTokeniserState_46_initWithNSString_withInt_(e, @"CommentStartDash", 45);
-    (JreEnum(OrgJsoupParserTokeniserState, Comment) = e = objc_constructInstance([OrgJsoupParserTokeniserState_47 class], (void *)ptr), ptr += objSize_Comment);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, Comment) = e = objc_constructInstance([OrgJsoupParserTokeniserState_47 class], (void *)ptr)), ptr += objSize_Comment);
     OrgJsoupParserTokeniserState_47_initWithNSString_withInt_(e, @"Comment", 46);
-    (JreEnum(OrgJsoupParserTokeniserState, CommentEndDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_48 class], (void *)ptr), ptr += objSize_CommentEndDash);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CommentEndDash) = e = objc_constructInstance([OrgJsoupParserTokeniserState_48 class], (void *)ptr)), ptr += objSize_CommentEndDash);
     OrgJsoupParserTokeniserState_48_initWithNSString_withInt_(e, @"CommentEndDash", 47);
-    (JreEnum(OrgJsoupParserTokeniserState, CommentEnd) = e = objc_constructInstance([OrgJsoupParserTokeniserState_49 class], (void *)ptr), ptr += objSize_CommentEnd);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CommentEnd) = e = objc_constructInstance([OrgJsoupParserTokeniserState_49 class], (void *)ptr)), ptr += objSize_CommentEnd);
     OrgJsoupParserTokeniserState_49_initWithNSString_withInt_(e, @"CommentEnd", 48);
-    (JreEnum(OrgJsoupParserTokeniserState, CommentEndBang) = e = objc_constructInstance([OrgJsoupParserTokeniserState_50 class], (void *)ptr), ptr += objSize_CommentEndBang);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CommentEndBang) = e = objc_constructInstance([OrgJsoupParserTokeniserState_50 class], (void *)ptr)), ptr += objSize_CommentEndBang);
     OrgJsoupParserTokeniserState_50_initWithNSString_withInt_(e, @"CommentEndBang", 49);
-    (JreEnum(OrgJsoupParserTokeniserState, Doctype) = e = objc_constructInstance([OrgJsoupParserTokeniserState_51 class], (void *)ptr), ptr += objSize_Doctype);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, Doctype) = e = objc_constructInstance([OrgJsoupParserTokeniserState_51 class], (void *)ptr)), ptr += objSize_Doctype);
     OrgJsoupParserTokeniserState_51_initWithNSString_withInt_(e, @"Doctype", 50);
-    (JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_52 class], (void *)ptr), ptr += objSize_BeforeDoctypeName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_52 class], (void *)ptr)), ptr += objSize_BeforeDoctypeName);
     OrgJsoupParserTokeniserState_52_initWithNSString_withInt_(e, @"BeforeDoctypeName", 51);
-    (JreEnum(OrgJsoupParserTokeniserState, DoctypeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_53 class], (void *)ptr), ptr += objSize_DoctypeName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, DoctypeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_53 class], (void *)ptr)), ptr += objSize_DoctypeName);
     OrgJsoupParserTokeniserState_53_initWithNSString_withInt_(e, @"DoctypeName", 52);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_54 class], (void *)ptr), ptr += objSize_AfterDoctypeName);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeName) = e = objc_constructInstance([OrgJsoupParserTokeniserState_54 class], (void *)ptr)), ptr += objSize_AfterDoctypeName);
     OrgJsoupParserTokeniserState_54_initWithNSString_withInt_(e, @"AfterDoctypeName", 53);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicKeyword) = e = objc_constructInstance([OrgJsoupParserTokeniserState_55 class], (void *)ptr), ptr += objSize_AfterDoctypePublicKeyword);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicKeyword) = e = objc_constructInstance([OrgJsoupParserTokeniserState_55 class], (void *)ptr)), ptr += objSize_AfterDoctypePublicKeyword);
     OrgJsoupParserTokeniserState_55_initWithNSString_withInt_(e, @"AfterDoctypePublicKeyword", 54);
-    (JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypePublicIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_56 class], (void *)ptr), ptr += objSize_BeforeDoctypePublicIdentifier);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypePublicIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_56 class], (void *)ptr)), ptr += objSize_BeforeDoctypePublicIdentifier);
     OrgJsoupParserTokeniserState_56_initWithNSString_withInt_(e, @"BeforeDoctypePublicIdentifier", 55);
-    (JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_doubleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_57 class], (void *)ptr), ptr += objSize_DoctypePublicIdentifier_doubleQuoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_doubleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_57 class], (void *)ptr)), ptr += objSize_DoctypePublicIdentifier_doubleQuoted);
     OrgJsoupParserTokeniserState_57_initWithNSString_withInt_(e, @"DoctypePublicIdentifier_doubleQuoted", 56);
-    (JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_singleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_58 class], (void *)ptr), ptr += objSize_DoctypePublicIdentifier_singleQuoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, DoctypePublicIdentifier_singleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_58 class], (void *)ptr)), ptr += objSize_DoctypePublicIdentifier_singleQuoted);
     OrgJsoupParserTokeniserState_58_initWithNSString_withInt_(e, @"DoctypePublicIdentifier_singleQuoted", 57);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_59 class], (void *)ptr), ptr += objSize_AfterDoctypePublicIdentifier);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypePublicIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_59 class], (void *)ptr)), ptr += objSize_AfterDoctypePublicIdentifier);
     OrgJsoupParserTokeniserState_59_initWithNSString_withInt_(e, @"AfterDoctypePublicIdentifier", 58);
-    (JreEnum(OrgJsoupParserTokeniserState, BetweenDoctypePublicAndSystemIdentifiers) = e = objc_constructInstance([OrgJsoupParserTokeniserState_60 class], (void *)ptr), ptr += objSize_BetweenDoctypePublicAndSystemIdentifiers);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BetweenDoctypePublicAndSystemIdentifiers) = e = objc_constructInstance([OrgJsoupParserTokeniserState_60 class], (void *)ptr)), ptr += objSize_BetweenDoctypePublicAndSystemIdentifiers);
     OrgJsoupParserTokeniserState_60_initWithNSString_withInt_(e, @"BetweenDoctypePublicAndSystemIdentifiers", 59);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemKeyword) = e = objc_constructInstance([OrgJsoupParserTokeniserState_61 class], (void *)ptr), ptr += objSize_AfterDoctypeSystemKeyword);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemKeyword) = e = objc_constructInstance([OrgJsoupParserTokeniserState_61 class], (void *)ptr)), ptr += objSize_AfterDoctypeSystemKeyword);
     OrgJsoupParserTokeniserState_61_initWithNSString_withInt_(e, @"AfterDoctypeSystemKeyword", 60);
-    (JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeSystemIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_62 class], (void *)ptr), ptr += objSize_BeforeDoctypeSystemIdentifier);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BeforeDoctypeSystemIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_62 class], (void *)ptr)), ptr += objSize_BeforeDoctypeSystemIdentifier);
     OrgJsoupParserTokeniserState_62_initWithNSString_withInt_(e, @"BeforeDoctypeSystemIdentifier", 61);
-    (JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_doubleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_63 class], (void *)ptr), ptr += objSize_DoctypeSystemIdentifier_doubleQuoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_doubleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_63 class], (void *)ptr)), ptr += objSize_DoctypeSystemIdentifier_doubleQuoted);
     OrgJsoupParserTokeniserState_63_initWithNSString_withInt_(e, @"DoctypeSystemIdentifier_doubleQuoted", 62);
-    (JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_singleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_64 class], (void *)ptr), ptr += objSize_DoctypeSystemIdentifier_singleQuoted);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, DoctypeSystemIdentifier_singleQuoted) = e = objc_constructInstance([OrgJsoupParserTokeniserState_64 class], (void *)ptr)), ptr += objSize_DoctypeSystemIdentifier_singleQuoted);
     OrgJsoupParserTokeniserState_64_initWithNSString_withInt_(e, @"DoctypeSystemIdentifier_singleQuoted", 63);
-    (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_65 class], (void *)ptr), ptr += objSize_AfterDoctypeSystemIdentifier);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, AfterDoctypeSystemIdentifier) = e = objc_constructInstance([OrgJsoupParserTokeniserState_65 class], (void *)ptr)), ptr += objSize_AfterDoctypeSystemIdentifier);
     OrgJsoupParserTokeniserState_65_initWithNSString_withInt_(e, @"AfterDoctypeSystemIdentifier", 64);
-    (JreEnum(OrgJsoupParserTokeniserState, BogusDoctype) = e = objc_constructInstance([OrgJsoupParserTokeniserState_66 class], (void *)ptr), ptr += objSize_BogusDoctype);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, BogusDoctype) = e = objc_constructInstance([OrgJsoupParserTokeniserState_66 class], (void *)ptr)), ptr += objSize_BogusDoctype);
     OrgJsoupParserTokeniserState_66_initWithNSString_withInt_(e, @"BogusDoctype", 65);
-    (JreEnum(OrgJsoupParserTokeniserState, CdataSection) = e = objc_constructInstance([OrgJsoupParserTokeniserState_67 class], (void *)ptr), ptr += objSize_CdataSection);
+    ((void) (JreEnum(OrgJsoupParserTokeniserState, CdataSection) = e = objc_constructInstance([OrgJsoupParserTokeniserState_67 class], (void *)ptr)), ptr += objSize_CdataSection);
     OrgJsoupParserTokeniserState_67_initWithNSString_withInt_(e, @"CdataSection", 66);
     JreStrongAssignAndConsume(&OrgJsoupParserTokeniserState_attributeSingleValueCharsSorted, [IOSCharArray newArrayWithChars:(jchar[]){ '\'', '&', OrgJsoupParserTokeniserState_nullChar } count:3]);
     JreStrongAssignAndConsume(&OrgJsoupParserTokeniserState_attributeDoubleValueCharsSorted, [IOSCharArray newArrayWithChars:(jchar[]){ '"', '&', OrgJsoupParserTokeniserState_nullChar } count:3]);
@@ -1360,6 +1361,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserTokeniserState)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1394,6 +1396,7 @@ void OrgJsoupParserTokeniserState_1_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1447,6 +1450,7 @@ void OrgJsoupParserTokeniserState_2_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1481,6 +1485,7 @@ void OrgJsoupParserTokeniserState_3_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1531,6 +1536,7 @@ void OrgJsoupParserTokeniserState_4_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1581,6 +1587,7 @@ void OrgJsoupParserTokeniserState_5_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1628,6 +1635,7 @@ void OrgJsoupParserTokeniserState_6_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1680,6 +1688,7 @@ void OrgJsoupParserTokeniserState_7_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1727,6 +1736,7 @@ void OrgJsoupParserTokeniserState_8_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1781,6 +1791,7 @@ void OrgJsoupParserTokeniserState_9_initWithNSString_withInt_(OrgJsoupParserToke
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1825,6 +1836,7 @@ void OrgJsoupParserTokeniserState_10_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1865,6 +1877,7 @@ void OrgJsoupParserTokeniserState_11_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -1931,6 +1944,7 @@ void OrgJsoupParserTokeniserState_12_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   methods[1].selector = @selector(anythingElseWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
@@ -1976,6 +1990,7 @@ void OrgJsoupParserTokeniserState_13_anythingElseWithOrgJsoupParserTokeniser_wit
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2014,6 +2029,7 @@ void OrgJsoupParserTokeniserState_14_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2045,6 +2061,7 @@ void OrgJsoupParserTokeniserState_15_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2089,6 +2106,7 @@ void OrgJsoupParserTokeniserState_16_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2127,6 +2145,7 @@ void OrgJsoupParserTokeniserState_17_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2158,6 +2177,7 @@ void OrgJsoupParserTokeniserState_18_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2195,6 +2215,7 @@ void OrgJsoupParserTokeniserState_19_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2232,6 +2253,7 @@ void OrgJsoupParserTokeniserState_20_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2287,6 +2309,7 @@ void OrgJsoupParserTokeniserState_21_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2340,6 +2363,7 @@ void OrgJsoupParserTokeniserState_22_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2396,6 +2420,7 @@ void OrgJsoupParserTokeniserState_23_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2440,6 +2465,7 @@ void OrgJsoupParserTokeniserState_24_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2480,6 +2506,7 @@ void OrgJsoupParserTokeniserState_25_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2511,6 +2538,7 @@ void OrgJsoupParserTokeniserState_26_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2542,6 +2570,7 @@ void OrgJsoupParserTokeniserState_27_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2598,6 +2627,7 @@ void OrgJsoupParserTokeniserState_28_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2651,6 +2681,7 @@ void OrgJsoupParserTokeniserState_29_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2707,6 +2738,7 @@ void OrgJsoupParserTokeniserState_30_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2745,6 +2777,7 @@ void OrgJsoupParserTokeniserState_31_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2776,6 +2809,7 @@ void OrgJsoupParserTokeniserState_32_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2845,6 +2879,7 @@ void OrgJsoupParserTokeniserState_33_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2910,6 +2945,7 @@ void OrgJsoupParserTokeniserState_34_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -2980,6 +3016,7 @@ void OrgJsoupParserTokeniserState_35_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3054,6 +3091,7 @@ void OrgJsoupParserTokeniserState_36_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3109,6 +3147,7 @@ void OrgJsoupParserTokeniserState_37_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3164,6 +3203,7 @@ void OrgJsoupParserTokeniserState_38_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3234,6 +3274,7 @@ void OrgJsoupParserTokeniserState_39_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3289,6 +3330,7 @@ void OrgJsoupParserTokeniserState_40_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3334,6 +3376,7 @@ void OrgJsoupParserTokeniserState_41_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3370,6 +3413,7 @@ void OrgJsoupParserTokeniserState_42_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3414,6 +3458,7 @@ void OrgJsoupParserTokeniserState_43_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3468,6 +3513,7 @@ void OrgJsoupParserTokeniserState_44_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3522,6 +3568,7 @@ void OrgJsoupParserTokeniserState_45_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3570,6 +3617,7 @@ void OrgJsoupParserTokeniserState_46_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3619,6 +3667,7 @@ void OrgJsoupParserTokeniserState_47_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3678,6 +3727,7 @@ void OrgJsoupParserTokeniserState_48_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3732,6 +3782,7 @@ void OrgJsoupParserTokeniserState_49_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3784,6 +3835,7 @@ void OrgJsoupParserTokeniserState_50_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3845,6 +3897,7 @@ void OrgJsoupParserTokeniserState_51_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3906,6 +3959,7 @@ void OrgJsoupParserTokeniserState_52_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -3959,6 +4013,7 @@ void OrgJsoupParserTokeniserState_53_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4023,6 +4078,7 @@ void OrgJsoupParserTokeniserState_54_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4084,6 +4140,7 @@ void OrgJsoupParserTokeniserState_55_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4138,6 +4195,7 @@ void OrgJsoupParserTokeniserState_56_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4192,6 +4250,7 @@ void OrgJsoupParserTokeniserState_57_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4254,6 +4313,7 @@ void OrgJsoupParserTokeniserState_58_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4315,6 +4375,7 @@ void OrgJsoupParserTokeniserState_59_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4379,6 +4440,7 @@ void OrgJsoupParserTokeniserState_60_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4440,6 +4502,7 @@ void OrgJsoupParserTokeniserState_61_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4494,6 +4557,7 @@ void OrgJsoupParserTokeniserState_62_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4548,6 +4612,7 @@ void OrgJsoupParserTokeniserState_63_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4600,6 +4665,7 @@ void OrgJsoupParserTokeniserState_64_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4643,6 +4709,7 @@ void OrgJsoupParserTokeniserState_65_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };
@@ -4677,6 +4744,7 @@ void OrgJsoupParserTokeniserState_66_initWithNSString_withInt_(OrgJsoupParserTok
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(readWithOrgJsoupParserTokeniser:withOrgJsoupParserCharacterReader:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "read", "LOrgJsoupParserTokeniser;LOrgJsoupParserCharacterReader;", "LOrgJsoupParserTokeniserState;" };

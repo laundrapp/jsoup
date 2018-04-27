@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupSelectElements
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSelectElements_) && (INCLUDE_ALL_OrgJsoupSelectElements || defined(INCLUDE_OrgJsoupSelectElements))
 #define OrgJsoupSelectElements_
 
@@ -37,15 +42,15 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)elements;
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)elements;
 
-- (instancetype)initWithOrgJsoupNodesElementArray:(IOSObjectArray *)elements;
+- (instancetype __nonnull)initWithOrgJsoupNodesElementArray:(IOSObjectArray *)elements;
 
-- (instancetype)initWithInt:(jint)initialCapacity;
+- (instancetype __nonnull)initWithInt:(jint)initialCapacity;
 
-- (instancetype)initWithJavaUtilList:(id<JavaUtilList>)elements;
+- (instancetype __nonnull)initWithJavaUtilList:(id<JavaUtilList>)elements;
 
 /*!
  @brief Add the class name to every matched element's <code>class</code> attribute.
@@ -379,4 +384,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectElements)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSelectElements")

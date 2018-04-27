@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesFormElement
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesFormElement_) && (INCLUDE_ALL_OrgJsoupNodesFormElement || defined(INCLUDE_OrgJsoupNodesFormElement))
 #define OrgJsoupNodesFormElement_
 
@@ -40,9 +45,9 @@
  @param baseUri the base URI
  @param attributes initial attributes
  */
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
-                             withNSString:(NSString *)baseUri
-              withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
+                                       withNSString:(NSString *)baseUri
+                        withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
 
 /*!
  @brief Add a form control element to this form.
@@ -76,8 +81,8 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
-                             withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
+                                       withNSString:(NSString *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -93,4 +98,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesFormElement)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesFormElement")

@@ -19,9 +19,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupHttpStatusException, url_, NSString *)
 
 @implementation OrgJsoupHttpStatusException
 
-- (instancetype)initWithNSString:(NSString *)message
-                         withInt:(jint)statusCode
-                    withNSString:(NSString *)url {
+- (instancetype __nonnull)initWithNSString:(NSString *)message
+                                   withInt:(jint)statusCode
+                              withNSString:(NSString *)url {
   OrgJsoupHttpStatusException_initWithNSString_withInt_withNSString_(self, message, statusCode, url);
   return self;
 }
@@ -52,6 +52,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupHttpStatusException, url_, NSString *)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withInt:withNSString:);
   methods[1].selector = @selector(getStatusCode);
   methods[2].selector = @selector(getUrl);

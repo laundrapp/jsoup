@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesTextNode
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesTextNode_) && (INCLUDE_ALL_OrgJsoupNodesTextNode || defined(INCLUDE_OrgJsoupNodesTextNode))
 #define OrgJsoupNodesTextNode_
 
@@ -41,8 +46,8 @@
  @param baseUri base uri
  - seealso: #createFromEncoded(String, String)
  */
-- (instancetype)initWithNSString:(NSString *)text
-                    withNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithNSString:(NSString *)text
+                              withNSString:(NSString *)baseUri;
 
 - (NSString *)absUrlWithNSString:(NSString *)attributeKey;
 
@@ -126,12 +131,12 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -157,4 +162,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesTextNode)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesTextNode")

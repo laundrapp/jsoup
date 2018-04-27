@@ -27,9 +27,9 @@ J2OBJC_FIELD_SETTER(OrgJsoupNodesFormElement, elements_, OrgJsoupSelectElements 
 
 @implementation OrgJsoupNodesFormElement
 
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
-                             withNSString:(NSString *)baseUri
-              withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes {
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
+                                       withNSString:(NSString *)baseUri
+                        withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes {
   OrgJsoupNodesFormElement_initWithOrgJsoupParserTag_withNSString_withOrgJsoupNodesAttributes_(self, tag, baseUri, attributes);
   return self;
 }
@@ -98,6 +98,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupNodesFormElement, elements_, OrgJsoupSelectElements 
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupParserTag:withNSString:withOrgJsoupNodesAttributes:);
   methods[1].selector = @selector(elements);
   methods[2].selector = @selector(addElementWithOrgJsoupNodesElement:);

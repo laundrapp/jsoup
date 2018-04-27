@@ -52,7 +52,7 @@ __attribute__((unused)) static void OrgJsoupNodesNode_reindexChildrenWithInt_(Or
   NSString *val$baseUri_;
 }
 
-- (instancetype)initWithNSString:(NSString *)capture$0;
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)node
                           withInt:(jint)depth;
@@ -76,8 +76,8 @@ __attribute__((unused)) static OrgJsoupNodesNode_1 *create_OrgJsoupNodesNode_1_i
   OrgJsoupNodesDocument_OutputSettings *out_;
 }
 
-- (instancetype)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)accum
-     withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *)outArg;
+- (instancetype __nonnull)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)accum
+               withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *)outArg;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)node
                           withInt:(jint)depth;
@@ -104,19 +104,19 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesNode)
 
 @implementation OrgJsoupNodesNode
 
-- (instancetype)initWithNSString:(NSString *)baseUri
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes {
+- (instancetype __nonnull)initWithNSString:(NSString *)baseUri
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes {
   OrgJsoupNodesNode_initWithNSString_withOrgJsoupNodesAttributes_(self, baseUri, attributes);
   return self;
 }
 
-- (instancetype)initWithNSString:(NSString *)baseUri {
+- (instancetype __nonnull)initWithNSString:(NSString *)baseUri {
   OrgJsoupNodesNode_initWithNSString_(self, baseUri);
   return self;
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupNodesNode_init(self);
   return self;
 }
@@ -545,6 +545,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withOrgJsoupNodesAttributes:);
   methods[1].selector = @selector(initWithNSString:);
   methods[2].selector = @selector(init);
@@ -674,7 +675,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesNode)
 
 @implementation OrgJsoupNodesNode_1
 
-- (instancetype)initWithNSString:(NSString *)capture$0 {
+- (instancetype __nonnull)initWithNSString:(NSString *)capture$0 {
   OrgJsoupNodesNode_1_initWithNSString_(self, capture$0);
   return self;
 }
@@ -701,6 +702,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesNode)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);
@@ -730,8 +732,8 @@ OrgJsoupNodesNode_1 *create_OrgJsoupNodesNode_1_initWithNSString_(NSString *capt
 
 @implementation OrgJsoupNodesNode_OuterHtmlVisitor
 
-- (instancetype)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)accum
-     withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *)outArg {
+- (instancetype __nonnull)initWithJavaLangStringBuilder:(JavaLangStringBuilder *)accum
+               withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *)outArg {
   OrgJsoupNodesNode_OuterHtmlVisitor_initWithJavaLangStringBuilder_withOrgJsoupNodesDocument_OutputSettings_(self, accum, outArg);
   return self;
 }
@@ -760,6 +762,7 @@ OrgJsoupNodesNode_1 *create_OrgJsoupNodesNode_1_initWithNSString_(NSString *capt
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaLangStringBuilder:withOrgJsoupNodesDocument_OutputSettings:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);

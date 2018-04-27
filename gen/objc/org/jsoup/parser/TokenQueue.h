@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupParserTokenQueue
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupParserTokenQueue_) && (INCLUDE_ALL_OrgJsoupParserTokenQueue || defined(INCLUDE_OrgJsoupParserTokenQueue))
 #define OrgJsoupParserTokenQueue_
 
@@ -32,7 +37,7 @@
  @brief Create a new TokenQueue.
  @param data string of data to back queue.
  */
-- (instancetype)initWithNSString:(NSString *)data;
+- (instancetype __nonnull)initWithNSString:(NSString *)data;
 
 /*!
  @brief Add a character to the start of the queue (will be the next character retrieved).
@@ -218,7 +223,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -236,4 +241,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserTokenQueue)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupParserTokenQueue")

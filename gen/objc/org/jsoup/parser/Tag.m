@@ -25,7 +25,7 @@
   jboolean formSubmit_;
 }
 
-- (instancetype)initWithNSString:(NSString *)tagName;
+- (instancetype __nonnull)initWithNSString:(NSString *)tagName;
 
 + (void)register__WithOrgJsoupParserTag:(OrgJsoupParserTag *)tag;
 
@@ -77,7 +77,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupParserTag)
 
 @implementation OrgJsoupParserTag
 
-- (instancetype)initWithNSString:(NSString *)tagName {
+- (instancetype __nonnull)initWithNSString:(NSString *)tagName {
   OrgJsoupParserTag_initWithNSString_(self, tagName);
   return self;
 }
@@ -211,6 +211,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupParserTag)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(getName);
   methods[2].selector = @selector(valueOfWithNSString:);

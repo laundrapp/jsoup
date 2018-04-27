@@ -36,7 +36,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParser, DEFAULT_MAX_ERRORS, jint)
 
 @implementation OrgJsoupParserParser
 
-- (instancetype)initWithOrgJsoupParserTreeBuilder:(OrgJsoupParserTreeBuilder *)treeBuilder {
+- (instancetype __nonnull)initWithOrgJsoupParserTreeBuilder:(OrgJsoupParserTreeBuilder *)treeBuilder {
   OrgJsoupParserParser_initWithOrgJsoupParserTreeBuilder_(self, treeBuilder);
   return self;
 }
@@ -134,6 +134,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupParserParser, DEFAULT_MAX_ERRORS, jint)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupParserTreeBuilder:);
   methods[1].selector = @selector(parseInputWithNSString:withNSString:);
   methods[2].selector = @selector(getTreeBuilder);

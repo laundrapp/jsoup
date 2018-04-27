@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupExamplesHtmlToPlainText
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupExamplesHtmlToPlainText_) && (INCLUDE_ALL_OrgJsoupExamplesHtmlToPlainText || defined(INCLUDE_OrgJsoupExamplesHtmlToPlainText))
 #define OrgJsoupExamplesHtmlToPlainText_
 
@@ -37,7 +42,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Format an Element to plain-text
@@ -64,4 +69,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupExamplesHtmlToPlainText)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupExamplesHtmlToPlainText")

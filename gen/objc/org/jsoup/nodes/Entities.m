@@ -30,7 +30,7 @@
 
 @interface OrgJsoupNodesEntities ()
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 + (jboolean)canEncodeWithOrgJsoupNodesEntities_CoreCharset:(OrgJsoupNodesEntities_CoreCharset *)charset
                                                   withChar:(jchar)c
@@ -136,7 +136,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupNodesEntities)
 @implementation OrgJsoupNodesEntities
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupNodesEntities_init(self);
   return self;
 }
@@ -207,6 +207,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(isNamedEntityWithNSString:);
   methods[2].selector = @selector(isBaseNamedEntityWithNSString:);
@@ -438,6 +439,7 @@ OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_values_[3];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(getMap);
   methods[1].selector = @selector(values);
   methods[2].selector = @selector(valueOfWithNSString:);
@@ -459,11 +461,11 @@ OrgJsoupNodesEntities_EscapeMode *OrgJsoupNodesEntities_EscapeMode_values_[3];
     size_t allocSize = 3 * objSize;
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
-    (JreEnum(OrgJsoupNodesEntities_EscapeMode, xhtml) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupNodesEntities_EscapeMode, xhtml) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(e, JreLoadStatic(OrgJsoupNodesEntities, xhtmlByVal), @"xhtml", 0);
-    (JreEnum(OrgJsoupNodesEntities_EscapeMode, base) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupNodesEntities_EscapeMode, base) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(e, JreLoadStatic(OrgJsoupNodesEntities, baseByVal), @"base", 1);
-    (JreEnum(OrgJsoupNodesEntities_EscapeMode, extended) = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+    ((void) (JreEnum(OrgJsoupNodesEntities_EscapeMode, extended) = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
     OrgJsoupNodesEntities_EscapeMode_initWithJavaUtilMap_withNSString_withInt_(e, JreLoadStatic(OrgJsoupNodesEntities, fullByVal), @"extended", 2);
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesEntities_EscapeMode)
   }
@@ -529,6 +531,7 @@ OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_values_[3];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(byNameWithNSString:);
   methods[1].selector = @selector(values);
   methods[2].selector = @selector(valueOfWithNSString:);
@@ -550,7 +553,7 @@ OrgJsoupNodesEntities_CoreCharset *OrgJsoupNodesEntities_CoreCharset_values_[3];
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 3; i++) {
-      (OrgJsoupNodesEntities_CoreCharset_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(OrgJsoupNodesEntities_CoreCharset_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       OrgJsoupNodesEntities_CoreCharset_initWithNSString_withInt_(e, JreEnumConstantName(OrgJsoupNodesEntities_CoreCharset_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesEntities_CoreCharset)

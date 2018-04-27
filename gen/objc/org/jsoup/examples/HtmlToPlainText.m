@@ -36,7 +36,7 @@ J2OBJC_STATIC_FIELD_CONSTANT(OrgJsoupExamplesHtmlToPlainText, timeout, jint)
   JavaLangStringBuilder *accum_;
 }
 
-- (instancetype)initWithOrgJsoupExamplesHtmlToPlainText:(OrgJsoupExamplesHtmlToPlainText *)outer$;
+- (instancetype __nonnull)initWithOrgJsoupExamplesHtmlToPlainText:(OrgJsoupExamplesHtmlToPlainText *)outer$;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)node
                           withInt:(jint)depth;
@@ -71,7 +71,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupExamplesHtmlToPlainText_FormattingVisitor)
 @implementation OrgJsoupExamplesHtmlToPlainText
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupExamplesHtmlToPlainText_init(self);
   return self;
 }
@@ -96,6 +96,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(mainWithNSStringArray:);
   methods[2].selector = @selector(getPlainTextWithOrgJsoupNodesElement:);
@@ -147,7 +148,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupExamplesHtmlToPlainText)
 
 @implementation OrgJsoupExamplesHtmlToPlainText_FormattingVisitor
 
-- (instancetype)initWithOrgJsoupExamplesHtmlToPlainText:(OrgJsoupExamplesHtmlToPlainText *)outer$ {
+- (instancetype __nonnull)initWithOrgJsoupExamplesHtmlToPlainText:(OrgJsoupExamplesHtmlToPlainText *)outer$ {
   OrgJsoupExamplesHtmlToPlainText_FormattingVisitor_initWithOrgJsoupExamplesHtmlToPlainText_(self, outer$);
   return self;
 }
@@ -191,6 +192,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupExamplesHtmlToPlainText)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupExamplesHtmlToPlainText:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);

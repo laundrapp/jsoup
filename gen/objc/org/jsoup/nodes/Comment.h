@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesComment
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesComment_) && (INCLUDE_ALL_OrgJsoupNodesComment || defined(INCLUDE_OrgJsoupNodesComment))
 #define OrgJsoupNodesComment_
 
@@ -37,8 +42,8 @@
  @param data The contents of the comment
  @param baseUri base URI
  */
-- (instancetype)initWithNSString:(NSString *)data
-                    withNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithNSString:(NSString *)data
+                              withNSString:(NSString *)baseUri;
 
 /*!
  @brief Get the contents of the comment.
@@ -62,12 +67,12 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -83,4 +88,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesComment)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesComment")

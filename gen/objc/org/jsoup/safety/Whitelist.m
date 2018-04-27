@@ -74,7 +74,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupSafetyWhitelist_TypedValue, value_, NSString *)
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSafetyWhitelist_init(self);
   return self;
 }
@@ -361,6 +361,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(none);
   methods[1].selector = @selector(simpleText);
   methods[2].selector = @selector(basic);
@@ -468,7 +469,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist)
 
 @implementation OrgJsoupSafetyWhitelist_TypedValue
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   OrgJsoupSafetyWhitelist_TypedValue_initWithNSString_(self, value);
   return self;
 }
@@ -510,6 +511,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(hash);
   methods[2].selector = @selector(isEqual:);
@@ -535,7 +537,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_TypedValue)
 
 @implementation OrgJsoupSafetyWhitelist_TagName
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   OrgJsoupSafetyWhitelist_TagName_initWithNSString_(self, value);
   return self;
 }
@@ -551,6 +553,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_TypedValue)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -582,7 +585,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_TagName)
 
 @implementation OrgJsoupSafetyWhitelist_AttributeKey
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   OrgJsoupSafetyWhitelist_AttributeKey_initWithNSString_(self, value);
   return self;
 }
@@ -598,6 +601,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_TagName)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -629,7 +633,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_AttributeKey)
 
 @implementation OrgJsoupSafetyWhitelist_AttributeValue
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   OrgJsoupSafetyWhitelist_AttributeValue_initWithNSString_(self, value);
   return self;
 }
@@ -645,6 +649,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_AttributeKey)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -676,7 +681,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_AttributeValue)
 
 @implementation OrgJsoupSafetyWhitelist_Protocol
 
-- (instancetype)initWithNSString:(NSString *)value {
+- (instancetype __nonnull)initWithNSString:(NSString *)value {
   OrgJsoupSafetyWhitelist_Protocol_initWithNSString_(self, value);
   return self;
 }
@@ -692,6 +697,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSafetyWhitelist_AttributeValue)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop

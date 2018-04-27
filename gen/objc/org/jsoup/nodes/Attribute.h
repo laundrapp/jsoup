@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesAttribute
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesAttribute_) && (INCLUDE_ALL_OrgJsoupNodesAttribute || defined(INCLUDE_OrgJsoupNodesAttribute))
 #define OrgJsoupNodesAttribute_
 
@@ -37,8 +42,8 @@
  @param value attribute value
  - seealso: #createFromEncoded
  */
-- (instancetype)initWithNSString:(NSString *)key
-                    withNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)key
+                              withNSString:(NSString *)value;
 
 - (OrgJsoupNodesAttribute *)java_clone;
 
@@ -110,7 +115,7 @@ withOrgJsoupNodesDocument_OutputSettings:(OrgJsoupNodesDocument_OutputSettings *
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -128,4 +133,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesAttribute)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesAttribute")

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesDataNode
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesDataNode_) && (INCLUDE_ALL_OrgJsoupNodesDataNode || defined(INCLUDE_OrgJsoupNodesDataNode))
 #define OrgJsoupNodesDataNode_
 
@@ -37,8 +42,8 @@
  @param data data contents
  @param baseUri base URI
  */
-- (instancetype)initWithNSString:(NSString *)data
-                    withNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithNSString:(NSString *)data
+                              withNSString:(NSString *)baseUri;
 
 /*!
  @brief Create a new DataNode from HTML encoded data.
@@ -78,12 +83,12 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -101,4 +106,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesDataNode)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesDataNode")

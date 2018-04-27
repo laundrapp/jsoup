@@ -98,7 +98,7 @@ __attribute__((unused)) static void OrgJsoupNodesDocument_QuirksMode_initWithNSS
 
 @implementation OrgJsoupNodesDocument
 
-- (instancetype)initWithNSString:(NSString *)baseUri {
+- (instancetype __nonnull)initWithNSString:(NSString *)baseUri {
   OrgJsoupNodesDocument_initWithNSString_(self, baseUri);
   return self;
 }
@@ -264,6 +264,7 @@ __attribute__((unused)) static void OrgJsoupNodesDocument_QuirksMode_initWithNSS
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(createShellWithNSString:);
   methods[2].selector = @selector(location);
@@ -424,7 +425,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupNodesDocument)
 @implementation OrgJsoupNodesDocument_OutputSettings
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupNodesDocument_OutputSettings_init(self);
   return self;
 }
@@ -537,6 +538,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(escapeMode);
   methods[2].selector = @selector(escapeModeWithOrgJsoupNodesEntities_EscapeMode:);
@@ -616,6 +618,7 @@ OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSetting
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -635,7 +638,7 @@ OrgJsoupNodesDocument_OutputSettings_Syntax *OrgJsoupNodesDocument_OutputSetting
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 2; i++) {
-      (OrgJsoupNodesDocument_OutputSettings_Syntax_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(OrgJsoupNodesDocument_OutputSettings_Syntax_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       OrgJsoupNodesDocument_OutputSettings_Syntax_initWithNSString_withInt_(e, JreEnumConstantName(OrgJsoupNodesDocument_OutputSettings_Syntax_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesDocument_OutputSettings_Syntax)
@@ -696,6 +699,7 @@ OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_values_[3];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -716,7 +720,7 @@ OrgJsoupNodesDocument_QuirksMode *OrgJsoupNodesDocument_QuirksMode_values_[3];
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 3; i++) {
-      (OrgJsoupNodesDocument_QuirksMode_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(OrgJsoupNodesDocument_QuirksMode_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       OrgJsoupNodesDocument_QuirksMode_initWithNSString_withInt_(e, JreEnumConstantName(OrgJsoupNodesDocument_QuirksMode_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(OrgJsoupNodesDocument_QuirksMode)

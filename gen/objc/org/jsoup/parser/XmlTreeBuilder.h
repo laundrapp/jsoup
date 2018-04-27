@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupParserXmlTreeBuilder
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupParserXmlTreeBuilder_) && (INCLUDE_ALL_OrgJsoupParserXmlTreeBuilder || defined(INCLUDE_OrgJsoupParserXmlTreeBuilder))
 #define OrgJsoupParserXmlTreeBuilder_
 
@@ -39,7 +44,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 #pragma mark Protected
 
@@ -77,4 +82,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserXmlTreeBuilder)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupParserXmlTreeBuilder")

@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupHelperValidate
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupHelperValidate_) && (INCLUDE_ALL_OrgJsoupHelperValidate || defined(INCLUDE_OrgJsoupHelperValidate))
 #define OrgJsoupHelperValidate_
 
@@ -131,4 +136,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperValidate)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupHelperValidate")

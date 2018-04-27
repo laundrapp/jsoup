@@ -14,7 +14,7 @@
 @implementation OrgJsoupSelectStructuralEvaluator
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSelectStructuralEvaluator_init(self);
   return self;
 }
@@ -31,6 +31,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   #pragma clang diagnostic pop
   static const J2ObjcFieldInfo fields[] = {
@@ -52,7 +53,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator)
 @implementation OrgJsoupSelectStructuralEvaluator_Root
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSelectStructuralEvaluator_Root_init(self);
   return self;
 }
@@ -70,6 +71,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   #pragma clang diagnostic pop
@@ -96,7 +98,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Root)
 
 @implementation OrgJsoupSelectStructuralEvaluator_Has
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
   OrgJsoupSelectStructuralEvaluator_Has_initWithOrgJsoupSelectEvaluator_(self, evaluator);
   return self;
 }
@@ -121,6 +123,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Root)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(description);
@@ -149,7 +152,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Has)
 
 @implementation OrgJsoupSelectStructuralEvaluator_Not
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
   OrgJsoupSelectStructuralEvaluator_Not_initWithOrgJsoupSelectEvaluator_(self, evaluator);
   return self;
 }
@@ -171,6 +174,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Has)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(description);
@@ -199,7 +203,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Not)
 
 @implementation OrgJsoupSelectStructuralEvaluator_Parent
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
   OrgJsoupSelectStructuralEvaluator_Parent_initWithOrgJsoupSelectEvaluator_(self, evaluator);
   return self;
 }
@@ -227,6 +231,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Not)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(description);
@@ -255,7 +260,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Parent)
 
 @implementation OrgJsoupSelectStructuralEvaluator_ImmediateParent
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
   OrgJsoupSelectStructuralEvaluator_ImmediateParent_initWithOrgJsoupSelectEvaluator_(self, evaluator);
   return self;
 }
@@ -279,6 +284,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_Parent)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(description);
@@ -307,7 +313,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_ImmediatePare
 
 @implementation OrgJsoupSelectStructuralEvaluator_PreviousSibling
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
   OrgJsoupSelectStructuralEvaluator_PreviousSibling_initWithOrgJsoupSelectEvaluator_(self, evaluator);
   return self;
 }
@@ -335,6 +341,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_ImmediatePare
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(description);
@@ -363,7 +370,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_PreviousSibli
 
 @implementation OrgJsoupSelectStructuralEvaluator_ImmediatePreviousSibling
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator {
   OrgJsoupSelectStructuralEvaluator_ImmediatePreviousSibling_initWithOrgJsoupSelectEvaluator_(self, evaluator);
   return self;
 }
@@ -387,6 +394,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectStructuralEvaluator_PreviousSibli
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(description);

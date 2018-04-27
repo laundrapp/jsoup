@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupExamplesListLinks
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupExamplesListLinks_) && (INCLUDE_ALL_OrgJsoupExamplesListLinks || defined(INCLUDE_OrgJsoupExamplesListLinks))
 #define OrgJsoupExamplesListLinks_
 
@@ -25,7 +30,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 + (void)mainWithNSStringArray:(IOSObjectArray *)args;
 
@@ -45,4 +50,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupExamplesListLinks)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupExamplesListLinks")

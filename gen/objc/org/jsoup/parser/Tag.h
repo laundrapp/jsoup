@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupParserTag
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupParserTag_) && (INCLUDE_ALL_OrgJsoupParserTag || defined(INCLUDE_OrgJsoupParserTag))
 #define OrgJsoupParserTag_
 
@@ -125,7 +130,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -139,4 +144,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupParserTag)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupParserTag")

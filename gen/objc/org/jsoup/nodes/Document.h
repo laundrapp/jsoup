@@ -45,7 +45,7 @@
  - seealso: org.jsoup.Jsoup
  - seealso: #createShell
  */
-- (instancetype)initWithNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithNSString:(NSString *)baseUri;
 
 /*!
  @brief Accessor to the document's <code>body</code> element.
@@ -184,12 +184,12 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
-                             withNSString:(NSString *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
+                                       withNSString:(NSString *)arg1 NS_UNAVAILABLE;
 
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
-                             withNSString:(NSString *)arg1
-              withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg2 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)arg0
+                                       withNSString:(NSString *)arg1
+                        withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg2 NS_UNAVAILABLE;
 
 @end
 
@@ -222,7 +222,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesDocument)
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Get the document's current output charset, which is used to control which characters are escaped when

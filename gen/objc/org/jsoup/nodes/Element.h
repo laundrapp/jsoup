@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesElement
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesElement_) && (INCLUDE_ALL_OrgJsoupNodesElement || defined(INCLUDE_OrgJsoupNodesElement))
 #define OrgJsoupNodesElement_
 
@@ -48,8 +53,8 @@
  @param baseUri the base URI of this element. It is acceptable for the base URI to be an empty             string, but not null.
  - seealso: Tag#valueOf(String)
  */
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
-                             withNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
+                                       withNSString:(NSString *)baseUri;
 
 /*!
  @brief Create a new, standalone Element.
@@ -60,9 +65,9 @@
  - seealso: #appendChild(Node)
  - seealso: #appendElement(String)
  */
-- (instancetype)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
-                             withNSString:(NSString *)baseUri
-              withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
+- (instancetype __nonnull)initWithOrgJsoupParserTag:(OrgJsoupParserTag *)tag
+                                       withNSString:(NSString *)baseUri
+                        withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)attributes;
 
 /*!
  @brief Add a class name to this element's <code>class</code> attribute.
@@ -723,12 +728,12 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -752,4 +757,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesElement)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesElement")

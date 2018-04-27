@@ -19,7 +19,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupSelectNodeTraversor, visitor_, id<OrgJsoupSelectNode
 
 @implementation OrgJsoupSelectNodeTraversor
 
-- (instancetype)initWithOrgJsoupSelectNodeVisitor:(id<OrgJsoupSelectNodeVisitor>)visitor {
+- (instancetype __nonnull)initWithOrgJsoupSelectNodeVisitor:(id<OrgJsoupSelectNodeVisitor>)visitor {
   OrgJsoupSelectNodeTraversor_initWithOrgJsoupSelectNodeVisitor_(self, visitor);
   return self;
 }
@@ -58,6 +58,7 @@ J2OBJC_FIELD_SETTER(OrgJsoupSelectNodeTraversor, visitor_, id<OrgJsoupSelectNode
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupSelectNodeVisitor:);
   methods[1].selector = @selector(traverseWithOrgJsoupNodesNode:);
   #pragma clang diagnostic pop

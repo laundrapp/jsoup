@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupNodesDocumentType
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupNodesDocumentType_) && (INCLUDE_ALL_OrgJsoupNodesDocumentType || defined(INCLUDE_OrgJsoupNodesDocumentType))
 #define OrgJsoupNodesDocumentType_
 
@@ -39,10 +44,10 @@
  @param systemId the doctype's system ID
  @param baseUri the doctype's base URI
  */
-- (instancetype)initWithNSString:(NSString *)name
-                    withNSString:(NSString *)publicId
-                    withNSString:(NSString *)systemId
-                    withNSString:(NSString *)baseUri;
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                              withNSString:(NSString *)publicId
+                              withNSString:(NSString *)systemId
+                              withNSString:(NSString *)baseUri;
 
 - (NSString *)nodeName;
 
@@ -58,12 +63,12 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0 NS_UNAVAILABLE;
 
-- (instancetype)initWithNSString:(NSString *)arg0
-     withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
+- (instancetype __nonnull)initWithNSString:(NSString *)arg0
+               withOrgJsoupNodesAttributes:(OrgJsoupNodesAttributes *)arg1 NS_UNAVAILABLE;
 
 @end
 
@@ -79,4 +84,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupNodesDocumentType)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupNodesDocumentType")

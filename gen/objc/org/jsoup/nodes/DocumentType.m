@@ -32,10 +32,10 @@ __attribute__((unused)) static jboolean OrgJsoupNodesDocumentType_hasWithNSStrin
 
 @implementation OrgJsoupNodesDocumentType
 
-- (instancetype)initWithNSString:(NSString *)name
-                    withNSString:(NSString *)publicId
-                    withNSString:(NSString *)systemId
-                    withNSString:(NSString *)baseUri {
+- (instancetype __nonnull)initWithNSString:(NSString *)name
+                              withNSString:(NSString *)publicId
+                              withNSString:(NSString *)systemId
+                              withNSString:(NSString *)baseUri {
   OrgJsoupNodesDocumentType_initWithNSString_withNSString_withNSString_withNSString_(self, name, publicId, systemId, baseUri);
   return self;
 }
@@ -78,6 +78,7 @@ __attribute__((unused)) static jboolean OrgJsoupNodesDocumentType_hasWithNSStrin
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSString:withNSString:withNSString:);
   methods[1].selector = @selector(nodeName);
   methods[2].selector = @selector(outerHtmlHeadWithJavaLangStringBuilder:withInt:withOrgJsoupNodesDocument_OutputSettings:);

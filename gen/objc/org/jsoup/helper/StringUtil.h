@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupHelperStringUtil
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupHelperStringUtil_) && (INCLUDE_ALL_OrgJsoupHelperStringUtil || defined(INCLUDE_OrgJsoupHelperStringUtil))
 #define OrgJsoupHelperStringUtil_
 
@@ -29,7 +34,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief After normalizing the whitespace within a string, appends it to a string builder.
@@ -158,4 +163,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperStringUtil)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupHelperStringUtil")

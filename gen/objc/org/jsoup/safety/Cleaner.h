@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupSafetyCleaner
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSafetyCleaner_) && (INCLUDE_ALL_OrgJsoupSafetyCleaner || defined(INCLUDE_OrgJsoupSafetyCleaner))
 #define OrgJsoupSafetyCleaner_
 
@@ -42,7 +47,7 @@
  @brief Create a new cleaner, that sanitizes documents using the supplied whitelist.
  @param whitelist white-list to clean with
  */
-- (instancetype)initWithOrgJsoupSafetyWhitelist:(OrgJsoupSafetyWhitelist *)whitelist;
+- (instancetype __nonnull)initWithOrgJsoupSafetyWhitelist:(OrgJsoupSafetyWhitelist *)whitelist;
 
 /*!
  @brief Creates a new, clean document, from the original dirty document, containing only elements allowed by the whitelist.
@@ -67,7 +72,7 @@
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -83,4 +88,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyCleaner)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSafetyCleaner")

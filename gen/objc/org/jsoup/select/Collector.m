@@ -14,7 +14,7 @@
 
 @interface OrgJsoupSelectCollector ()
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -31,9 +31,9 @@ __attribute__((unused)) static OrgJsoupSelectCollector *create_OrgJsoupSelectCol
   OrgJsoupSelectEvaluator *eval_;
 }
 
-- (instancetype)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
-                  withOrgJsoupSelectElements:(OrgJsoupSelectElements *)elements
-                 withOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)eval;
+- (instancetype __nonnull)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
+                            withOrgJsoupSelectElements:(OrgJsoupSelectElements *)elements
+                           withOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)eval;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)node
                           withInt:(jint)depth;
@@ -60,7 +60,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSelectCollector_Accumulator)
 @implementation OrgJsoupSelectCollector
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSelectCollector_init(self);
   return self;
 }
@@ -78,6 +78,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(collectWithOrgJsoupSelectEvaluator:withOrgJsoupNodesElement:);
   #pragma clang diagnostic pop
@@ -111,9 +112,9 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectCollector)
 
 @implementation OrgJsoupSelectCollector_Accumulator
 
-- (instancetype)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
-                  withOrgJsoupSelectElements:(OrgJsoupSelectElements *)elements
-                 withOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)eval {
+- (instancetype __nonnull)initWithOrgJsoupNodesElement:(OrgJsoupNodesElement *)root
+                            withOrgJsoupSelectElements:(OrgJsoupSelectElements *)elements
+                           withOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)eval {
   OrgJsoupSelectCollector_Accumulator_initWithOrgJsoupNodesElement_withOrgJsoupSelectElements_withOrgJsoupSelectEvaluator_(self, root, elements, eval);
   return self;
 }
@@ -145,6 +146,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectCollector)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithOrgJsoupNodesElement:withOrgJsoupSelectElements:withOrgJsoupSelectEvaluator:);
   methods[1].selector = @selector(headWithOrgJsoupNodesNode:withInt:);
   methods[2].selector = @selector(tailWithOrgJsoupNodesNode:withInt:);

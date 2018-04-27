@@ -18,7 +18,7 @@
 
 @interface OrgJsoupParserToken ()
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 @end
 
@@ -65,7 +65,7 @@ __attribute__((unused)) static void OrgJsoupParserToken_TokenType_initWithNSStri
 @implementation OrgJsoupParserToken
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_init(self);
   return self;
 }
@@ -154,6 +154,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(tokenType);
   methods[2].selector = @selector(reset);
@@ -196,7 +197,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken)
 @implementation OrgJsoupParserToken_Doctype
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_Doctype_init(self);
   return self;
 }
@@ -244,6 +245,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(reset);
   methods[2].selector = @selector(getName);
@@ -286,7 +288,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken_Doctype)
 @implementation OrgJsoupParserToken_Tag
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_Tag_init(self);
   return self;
 }
@@ -392,6 +394,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(reset);
   methods[2].selector = @selector(newAttribute);
@@ -482,7 +485,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken_Tag)
 @implementation OrgJsoupParserToken_StartTag
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_StartTag_init(self);
   return self;
 }
@@ -515,6 +518,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(reset);
   methods[2].selector = @selector(nameAttrWithNSString:withOrgJsoupNodesAttributes:);
@@ -546,7 +550,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken_StartTag)
 @implementation OrgJsoupParserToken_EndTag
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_EndTag_init(self);
   return self;
 }
@@ -563,6 +567,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(description);
   #pragma clang diagnostic pop
@@ -597,7 +602,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken_EndTag)
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_Comment_init(self);
   return self;
 }
@@ -625,6 +630,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(reset);
   methods[1].selector = @selector(init);
   methods[2].selector = @selector(getData);
@@ -661,7 +667,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken_Comment)
 @implementation OrgJsoupParserToken_Character
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_Character_init(self);
   return self;
 }
@@ -700,6 +706,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(reset);
   methods[2].selector = @selector(dataWithNSString:);
@@ -734,7 +741,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupParserToken_Character)
 @implementation OrgJsoupParserToken_EOF
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupParserToken_EOF_init(self);
   return self;
 }
@@ -751,6 +758,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(reset);
   #pragma clang diagnostic pop
@@ -797,6 +805,7 @@ OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_values_[6];
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(values);
   methods[1].selector = @selector(valueOfWithNSString:);
   #pragma clang diagnostic pop
@@ -820,7 +829,7 @@ OrgJsoupParserToken_TokenType *OrgJsoupParserToken_TokenType_values_[6];
     uintptr_t ptr = (uintptr_t)calloc(allocSize, 1);
     id e;
     for (jint i = 0; i < 6; i++) {
-      (OrgJsoupParserToken_TokenType_values_[i] = e = objc_constructInstance(self, (void *)ptr), ptr += objSize);
+      ((void)(OrgJsoupParserToken_TokenType_values_[i] = e = objc_constructInstance(self, (void *)ptr)), ptr += objSize);
       OrgJsoupParserToken_TokenType_initWithNSString_withInt_(e, JreEnumConstantName(OrgJsoupParserToken_TokenType_class_(), i), i);
     }
     J2OBJC_SET_INITIALIZED(OrgJsoupParserToken_TokenType)

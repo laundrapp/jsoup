@@ -32,7 +32,7 @@
  @brief Create a new QueryParser.
  @param query CSS query
  */
-- (instancetype)initWithNSString:(NSString *)query;
+- (instancetype __nonnull)initWithNSString:(NSString *)query;
 
 - (void)combinatorWithChar:(jchar)combinator;
 
@@ -135,7 +135,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupSelectQueryParser)
 
 @implementation OrgJsoupSelectQueryParser
 
-- (instancetype)initWithNSString:(NSString *)query {
+- (instancetype __nonnull)initWithNSString:(NSString *)query {
   OrgJsoupSelectQueryParser_initWithNSString_(self, query);
   return self;
 }
@@ -270,6 +270,7 @@ J2OBJC_INITIALIZED_DEFN(OrgJsoupSelectQueryParser)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:);
   methods[1].selector = @selector(parseWithNSString:);
   methods[2].selector = @selector(parse);

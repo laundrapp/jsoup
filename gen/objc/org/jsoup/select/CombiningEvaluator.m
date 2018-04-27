@@ -18,13 +18,13 @@
 @implementation OrgJsoupSelectCombiningEvaluator
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSelectCombiningEvaluator_init(self);
   return self;
 }
 J2OBJC_IGNORE_DESIGNATED_END
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators {
   OrgJsoupSelectCombiningEvaluator_initWithJavaUtilCollection_(self, evaluators);
   return self;
 }
@@ -56,6 +56,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(init);
   methods[1].selector = @selector(initWithJavaUtilCollection:);
   methods[2].selector = @selector(rightMostEvaluator);
@@ -89,12 +90,12 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectCombiningEvaluator)
 
 @implementation OrgJsoupSelectCombiningEvaluator_And
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators {
   OrgJsoupSelectCombiningEvaluator_And_initWithJavaUtilCollection_(self, evaluators);
   return self;
 }
 
-- (instancetype)initWithOrgJsoupSelectEvaluatorArray:(IOSObjectArray *)evaluators {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluatorArray:(IOSObjectArray *)evaluators {
   OrgJsoupSelectCombiningEvaluator_And_initWithOrgJsoupSelectEvaluatorArray_(self, evaluators);
   return self;
 }
@@ -121,6 +122,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectCombiningEvaluator)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilCollection:);
   methods[1].selector = @selector(initWithOrgJsoupSelectEvaluatorArray:);
   methods[2].selector = @selector(matchesWithOrgJsoupNodesElement:withOrgJsoupNodesElement:);
@@ -161,13 +163,13 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectCombiningEvaluator_And)
 
 @implementation OrgJsoupSelectCombiningEvaluator_Or
 
-- (instancetype)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators {
+- (instancetype __nonnull)initWithJavaUtilCollection:(id<JavaUtilCollection>)evaluators {
   OrgJsoupSelectCombiningEvaluator_Or_initWithJavaUtilCollection_(self, evaluators);
   return self;
 }
 
 J2OBJC_IGNORE_DESIGNATED_BEGIN
-- (instancetype)init {
+- (instancetype __nonnull)init {
   OrgJsoupSelectCombiningEvaluator_Or_init(self);
   return self;
 }
@@ -201,6 +203,7 @@ J2OBJC_IGNORE_DESIGNATED_END
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithJavaUtilCollection:);
   methods[1].selector = @selector(init);
   methods[2].selector = @selector(addWithOrgJsoupSelectEvaluator:);

@@ -25,6 +25,11 @@
 #define INCLUDE_OrgJsoupSafetyWhitelist_TypedValue 1
 #endif
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupSafetyWhitelist_) && (INCLUDE_ALL_OrgJsoupSafetyWhitelist || defined(INCLUDE_OrgJsoupSafetyWhitelist))
 #define OrgJsoupSafetyWhitelist_
 
@@ -88,7 +93,7 @@
  - seealso: #simpleText()
  - seealso: #relaxed()
  */
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Add a list of allowed attributes to a tag.
@@ -329,7 +334,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 @end
 
@@ -348,7 +353,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist_TypedValue)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 + (OrgJsoupSafetyWhitelist_TagName *)valueOfWithNSString:(NSString *)value;
 
@@ -375,7 +380,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist_TagName)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 + (OrgJsoupSafetyWhitelist_AttributeKey *)valueOfWithNSString:(NSString *)value;
 
@@ -402,7 +407,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist_AttributeKey)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 + (OrgJsoupSafetyWhitelist_AttributeValue *)valueOfWithNSString:(NSString *)value;
 
@@ -429,7 +434,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist_AttributeValue)
 
 #pragma mark Package-Private
 
-- (instancetype)initWithNSString:(NSString *)value;
+- (instancetype __nonnull)initWithNSString:(NSString *)value;
 
 + (OrgJsoupSafetyWhitelist_Protocol *)valueOfWithNSString:(NSString *)value;
 
@@ -449,4 +454,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupSafetyWhitelist_Protocol)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupSafetyWhitelist")

@@ -23,11 +23,11 @@
   OrgJsoupNodesElement *root_;
 }
 
-- (instancetype)initWithNSString:(NSString *)query
-        withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root;
+- (instancetype __nonnull)initWithNSString:(NSString *)query
+                  withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root;
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator
-                       withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root;
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator
+                                 withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root;
 
 - (OrgJsoupSelectElements *)select;
 
@@ -52,14 +52,14 @@ __attribute__((unused)) static OrgJsoupSelectElements *OrgJsoupSelectSelector_se
 
 @implementation OrgJsoupSelectSelector
 
-- (instancetype)initWithNSString:(NSString *)query
-        withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root {
+- (instancetype __nonnull)initWithNSString:(NSString *)query
+                  withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root {
   OrgJsoupSelectSelector_initWithNSString_withOrgJsoupNodesElement_(self, query, root);
   return self;
 }
 
-- (instancetype)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator
-                       withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root {
+- (instancetype __nonnull)initWithOrgJsoupSelectEvaluator:(OrgJsoupSelectEvaluator *)evaluator
+                                 withOrgJsoupNodesElement:(OrgJsoupNodesElement *)root {
   OrgJsoupSelectSelector_initWithOrgJsoupSelectEvaluator_withOrgJsoupNodesElement_(self, evaluator, root);
   return self;
 }
@@ -106,6 +106,7 @@ __attribute__((unused)) static OrgJsoupSelectElements *OrgJsoupSelectSelector_se
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withOrgJsoupNodesElement:);
   methods[1].selector = @selector(initWithOrgJsoupSelectEvaluator:withOrgJsoupNodesElement:);
   methods[2].selector = @selector(selectWithNSString:withOrgJsoupNodesElement:);
@@ -205,8 +206,8 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectSelector)
 
 @implementation OrgJsoupSelectSelector_SelectorParseException
 
-- (instancetype)initWithNSString:(NSString *)msg
-               withNSObjectArray:(IOSObjectArray *)params {
+- (instancetype __nonnull)initWithNSString:(NSString *)msg
+                         withNSObjectArray:(IOSObjectArray *)params {
   OrgJsoupSelectSelector_SelectorParseException_initWithNSString_withNSObjectArray_(self, msg, params);
   return self;
 }
@@ -217,6 +218,7 @@ J2OBJC_CLASS_TYPE_LITERAL_SOURCE(OrgJsoupSelectSelector)
   };
   #pragma clang diagnostic push
   #pragma clang diagnostic ignored "-Wobjc-multiple-method-names"
+  #pragma clang diagnostic ignored "-Wundeclared-selector"
   methods[0].selector = @selector(initWithNSString:withNSObjectArray:);
   #pragma clang diagnostic pop
   static const void *ptrTable[] = { "LNSString;[LNSObject;", "LOrgJsoupSelectSelector;" };

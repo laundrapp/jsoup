@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupHelperW3CDom
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupHelperW3CDom_) && (INCLUDE_ALL_OrgJsoupHelperW3CDom || defined(INCLUDE_OrgJsoupHelperW3CDom))
 #define OrgJsoupHelperW3CDom_
 
@@ -34,7 +39,7 @@
 
 #pragma mark Public
 
-- (instancetype)init;
+- (instancetype __nonnull)init;
 
 /*!
  @brief Serialize a W3C document to a String.
@@ -94,8 +99,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperW3CDom)
 
 #pragma mark Public
 
-- (instancetype)initWithOrgJsoupHelperW3CDom:(OrgJsoupHelperW3CDom *)outer$
-                       withOrgW3cDomDocument:(id<OrgW3cDomDocument>)doc;
+- (instancetype __nonnull)initWithOrgJsoupHelperW3CDom:(OrgJsoupHelperW3CDom *)outer$
+                                 withOrgW3cDomDocument:(id<OrgW3cDomDocument>)doc;
 
 - (void)headWithOrgJsoupNodesNode:(OrgJsoupNodesNode *)source
                           withInt:(jint)depth;
@@ -105,7 +110,7 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperW3CDom)
 
 // Disallowed inherited constructors, do not use.
 
-- (instancetype)init NS_UNAVAILABLE;
+- (instancetype __nonnull)init NS_UNAVAILABLE;
 
 @end
 
@@ -121,4 +126,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupHelperW3CDom_W3CBuilder)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupHelperW3CDom")

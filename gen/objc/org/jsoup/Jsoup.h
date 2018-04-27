@@ -13,6 +13,11 @@
 #endif
 #undef RESTRICT_OrgJsoupJsoup
 
+#if __has_feature(nullability)
+#pragma clang diagnostic push
+#pragma GCC diagnostic ignored "-Wnullability-completeness"
+#endif
+
 #if !defined (OrgJsoupJsoup_) && (INCLUDE_ALL_OrgJsoupJsoup || defined(INCLUDE_OrgJsoupJsoup))
 #define OrgJsoupJsoup_
 
@@ -257,4 +262,8 @@ J2OBJC_TYPE_LITERAL_HEADER(OrgJsoupJsoup)
 
 #endif
 
+
+#if __has_feature(nullability)
+#pragma clang diagnostic pop
+#endif
 #pragma pop_macro("INCLUDE_ALL_OrgJsoupJsoup")
